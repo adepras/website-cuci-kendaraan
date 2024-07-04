@@ -149,6 +149,21 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
     </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        var lastScrollTop = 0;
+        $(window).scroll(function() {
+            var scrollTop = $(this).scrollTop();
+            if (scrollTop > lastScrollTop) {
+                // Scrolling down
+                $('.navbar').css('top', '-100px');
+            } else {
+                // Scrolling up
+                $('.navbar').css('top', '0');
+            }
+            lastScrollTop = scrollTop;
+        });
+    </script>
 </body>
 
 </html>
