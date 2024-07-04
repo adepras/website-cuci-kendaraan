@@ -43,10 +43,10 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#salon-mobil">Salon Mobil</a>
+                            <a class="nav-link" href="#layanan">Layanan Kami</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#paket">Paket</a>
+                            <a class="nav-link" href="#harga">Harga</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#tentang-kami">Tentang Kami</a>
@@ -61,7 +61,7 @@
 
     <Body>
         <section id="home" class="py-5">
-            <div class="container">
+            <div class="container-home">
                 <div class="tagline">
                     <h4>Cuci dan Salon Mobil Profesional<img src="image/patch-check-fill.svg" alt=""></h4>
                     <p>Tidak perlu menunggu lama lagi saat ingin mencuci kendaraan Anda<br>Dan kami siap membersihkan
@@ -73,22 +73,65 @@
                 </div>
             </div>
         </section>
-        <section id="salon-mobil" class="py-5 bg-light">
-            <div class="container">
+        <section id="layanan" class="py-5 bg-light">
+            <div class="container-layanan text-center">
                 <h2 class="mb-4">Sekarang, cuci kendaraan lebih mudah dan terjadwal tanpa ribet antri.</h2>
                 <p>Banyak orang sudah menggunakan layanan kami. <br>Apa yang kami tawarkan?</p>
+                <ul class="text-service">
+                    <li><img src="image/fast-time-ill.png" alt="">Cepat Tanpa Repot Antri</li>
+                    <li><img src="image/calendar-check-ill.png" alt="">Bebas Atur Jadwal</li>
+                    <li><img src="image/fast-time-ill.png" alt="">Kendaraan Aman Terjaga</li>
+                    <li><img src="image/group-ill.png" alt="">Profesional dan Tanggap</li>
+                    <li><img src="image/drips-ill.png" alt="">Sabun/Foam Premium</li>
+                    <li><img src="image/verify-ill.png" alt="">Garansi Cuci Kembali</li>
+                </ul>
             </div>
         </section>
-        <section id="paket" class="py-5">
-            <div class="container">
-                <h2 class="mb-4">Paket</h2>
-                <p>Choose from our range of packages tailored to meet your needs. Whether you need a quick wash or a
-                    complete detailing service, we have the perfect package for you.</p>
-                <ul>
-                    <li>Paket A: Basic Wash</li>
-                    <li>Paket B: Full Wash</li>
-                    <li>Paket C: Premium Detail</li>
-                </ul>
+        <section id="harga" class="py-5">
+            <div class="container-harga">
+                <h2 class="mb-4">Harga bersahabat hasil mantap.</h2>
+                <p>Kami menawarkan paket pencucian sesuai dengan kebutuhan Anda.</p>
+                {{-- <div class="row row-cols-1 row-cols-md-4 g-4">
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Basic</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Standart</h5>
+                                <p class="card-text">This is a short card.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Profesional</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural
+                                    lead-in to additional content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Elite</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div> --}}
             </div>
         </section>
         <section id="tentang-kami" class="py-5 bg-light">

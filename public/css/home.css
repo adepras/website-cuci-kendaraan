@@ -18,7 +18,8 @@ body {
 }
 
 .navbar-brand {
-    font-family: 'Poppins', sans-serif; /* Gagal menginput font Nutmeg Bold*/
+    font-family: 'Poppins', sans-serif;
+    /* Gagal menginput font Nutmeg Bold*/
     font-weight: 700;
     color: #ffff;
     font-size: 30px;
@@ -100,7 +101,7 @@ section h2 {
 section p {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
-    color: #333;
+    color: #222;
     margin-bottom: 20px;
     text-align: center;
 }
@@ -111,9 +112,10 @@ section p {
     height: auto;
 }
 
-.container {
+.container-home {
     display: flex;
     align-items: center;
+    padding: 0 60px;
 }
 
 #home {
@@ -135,7 +137,7 @@ section p {
 
 .tagline h4 {
     font-size: 28px;
-    color: #333;
+    color: #000;
     font-weight: 600;
     text-align: left;
     padding: 20px 0;
@@ -143,7 +145,6 @@ section p {
 
 .tagline p {
     font-size: 17px;
-    color: #333;
     text-align: left;
 }
 
@@ -163,23 +164,59 @@ section p {
     color: #000;
 }
 
-/* Salon Mobil */
-#salon-mobil {
+/* Layanan Kami */
+#layanan {
     background-color: #e3f2fd;
 }
 
-/* Paket */
-#paket {
+#layanan .container-layanan {
+    text-align: center;
+}
+
+.container-layanan h2 {
+    color: #000;
+}
+
+.text-service {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 80px;
+}
+
+.text-service li {
+    flex: 0 0 33%;
+    text-align: left;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+
+.text-service img {
+    width: 50px;
+    height: auto;
+    padding-right: 10px;
+}
+
+
+/* Harga */
+#harga {
     background-color: #f1f8ff;
 }
 
-#paket ul {
+.container-harga h2 {
+    color: #000;
+}
+
+#harga ul {
     list-style: none;
     padding: 0;
     text-align: center;
 }
 
-#paket ul li {
+#harga ul li {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     color: #007bff;
