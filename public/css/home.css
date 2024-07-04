@@ -1,35 +1,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+@font-face {
+    font-family: 'Nutmeg Bold', sans-serif;
+    src: url('/public/font/Fontspring-DEMO-nutmeg-bold.otf') format('truetype');
+}
+
 body {
     font-family: 'Poppins', sans-serif;
 }
 
 /* Navbar */
 .navbar {
-    background-color: #f8f9fa;
-    gap: 10px;
+    background-color: #2daae1;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
 }
 
 .navbar-brand {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif; /* Gagal menginput font Nutmeg Bold*/
     font-weight: 700;
-    color: #007bff;
+    color: #ffff;
+    font-size: 30px;
 }
 
 .navbar-nav .nav-link {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
-    color: #555;
+    color: #ffff;
     transition: color 0.3s;
 }
 
+.navbar-brand:hover {
+    color: #2d7fc1;
+}
+
 .navbar-nav .nav-link:hover {
-    color: #007bff;
+    color: #e9ecef;
 }
 
 .navbar-nav .nav-link.active {
     font-weight: 600;
-    color: #007bff;
+    color: #e9ecef;
 }
 
 .navbar-toggler {
@@ -40,17 +52,36 @@ body {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%280, 123, 255, 0.5%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
-.pesan-sekarang {
+.nav-login {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
-    background-color: #007bff;
-    border-color: #007bff;
+    background-color: #2daae1;
+    border: 2px solid #ffff;
     transition: background-color 0.3s, border-color 0.3s;
+    padding: 8px 30px;
+    margin-right: 25px;
 }
 
-.pesan-sekarang:hover {
-    background-color: #0056b3;
-    border-color: #0056b3;
+.nav-login:hover {
+    background-color: #ffff;
+    border-color: #ffff;
+    color: #2daae1;
+}
+
+.nav-daftar {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #2daae1;
+    background-color: #ffff;
+    border: 2px solid #ffff;
+    transition: background-color 0.3s, border-color 0.3s;
+    padding: 8px 26px;
+}
+
+.nav-daftar:hover {
+    background-color: #e9ecef;
+    border-color: #e9ecef;
+    color: #2daae1;
 }
 
 /* Sections */
@@ -85,6 +116,10 @@ section p {
     align-items: center;
 }
 
+#home {
+    background-color: #2daae1;
+}
+
 .image-container {
     flex: 1;
     margin-right: 20px;
@@ -94,10 +129,38 @@ section p {
     flex: 1;
 }
 
+.tagline img {
+    padding-left: 5px;
+}
+
 .tagline h4 {
-    font-size: 24px;
+    font-size: 28px;
     color: #333;
     font-weight: 600;
+    text-align: left;
+    padding: 20px 0;
+}
+
+.tagline p {
+    font-size: 17px;
+    color: #333;
+    text-align: left;
+}
+
+.btn-pesan {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #000;
+    background-color: #ffcb05;
+    border: 2px solid #ffcb05;
+    transition: background-color 0.3s, border-color 0.3s;
+    padding: 8px 26px;
+}
+
+.btn-pesan:hover {
+    background-color: #edbe06;
+    border-color: #edbe06;
+    color: #000;
 }
 
 /* Salon Mobil */

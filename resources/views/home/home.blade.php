@@ -19,7 +19,7 @@
 
 <body>
     <Header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container">
                 <a class="navbar-brand" href="#">iWash</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -29,7 +29,7 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                            <a class="nav-link" aria-current="page" href="#home">Home</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -53,7 +53,8 @@
                         </li>
                     </ul>
                 </div>
-                <button class="btn btn-primary pesan-sekarang">Pesan Sekarang</button>
+                <button class="btn btn-primary nav-login">Login</button>
+                <button class="btn btn-primary nav-daftar">Daftar</button>
             </div>
         </nav>
     </Header>
@@ -61,22 +62,21 @@
     <Body>
         <section id="home" class="py-5">
             <div class="container">
+                <div class="tagline">
+                    <h4>Cuci dan Salon Mobil Profesional<img src="image/patch-check-fill.svg" alt=""></h4>
+                    <p>Tidak perlu menunggu lama lagi saat ingin mencuci kendaraan Anda<br>Dan kami siap membersihkan
+                        kendaraan Anda kapanpun dibutuhkan.</p>
+                    <button class="btn btn-secondary btn-pesan">Pesan Sekarang</button>
+                </div>
                 <div class="image-container">
                     <img src="image/car-wash-ill.png" alt="" class="half-size">
-                </div>
-                <div class="tagline">
-                    <h4>Cuci dan Salon Mobil Profesional</h4>
-                    <p>Tidak perlu menunggu lama lagi saat ingin mencuci kendaraan Anda <br> Dan kami siap membersihkan
-                        kendaraan Anda kapanpun dibutuhkan</p>
                 </div>
             </div>
         </section>
         <section id="salon-mobil" class="py-5 bg-light">
             <div class="container">
-                <h2 class="mb-4">Salon Mobil</h2>
-                <p>Our car salon services offer a complete makeover for your vehicle, ensuring it looks brand new inside
-                    and out. We use the best products and techniques to provide a thorough cleaning, polishing, and
-                    detailing service.</p>
+                <h2 class="mb-4">Sekarang, cuci kendaraan lebih mudah dan terjadwal tanpa ribet antri.</h2>
+                <p>Banyak orang sudah menggunakan layanan kami. <br>Apa yang kami tawarkan?</p>
             </div>
         </section>
         <section id="paket" class="py-5">
