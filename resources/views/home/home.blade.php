@@ -31,17 +31,16 @@
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="#home">Home</a>
                         </li>
-                        <li class="nav-item dropdown">
+                        {{-- <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
                                 Cuci Kendaraan
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Motor</a></li>
                                 <li><a class="dropdown-item" href="#">Mobil</a></li>
                                 <li><a class="dropdown-item" href="#">Truk</a></li>
                             </ul>
-                        </li>
+                        </li> --}}
                         <li class="nav-item">
                             <a class="nav-link" href="#layanan">Layanan Kami</a>
                         </li>
@@ -50,6 +49,9 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#tentang-kami">Tentang Kami</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#testimoni">Testimoni</a>
                         </li>
                     </ul>
                 </div>
@@ -92,7 +94,7 @@
                 <h2 class="mb-4">Harga bersahabat hasil mantap.</h2>
                 <p>Kami menawarkan paket pencucian sesuai dengan kebutuhan Anda.</p>
                 <div class="harga-content">
-                    <img src="image/character-top-ill.svg" alt="">
+                    <img src="image/character-top-ill.svg" alt="" style="margin-left: -100px;">
                     <div class="card-container">
                         <div class="card">
                             <div class="card-title">
@@ -163,6 +165,13 @@
         </div>
     </footer>
 
+    <div id="whatsapp-popup">
+        <a href="https://wa.me/" target="_blank">
+            <img src="image/whatsapp-ill.svg" alt="whatsapp icon">
+            <span>Konsultasi gratis!</span>
+        </a>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
     </script>
@@ -185,17 +194,17 @@
     {{-- Mengatur scroll per-section --}}
     <script>
         document.querySelectorAll('nav a').forEach(anchor => {
-          anchor.addEventListener('click', function(e) {
-            e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            const offset = 100;
-            window.scrollTo({
-              top: target.offsetTop - offset,
-              behavior: 'smooth'
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                const offset = 100;
+                window.scrollTo({
+                    top: target.offsetTop - offset,
+                    behavior: 'smooth'
+                });
             });
-          });
         });
-      </script>
+    </script>
 </body>
 
 </html>

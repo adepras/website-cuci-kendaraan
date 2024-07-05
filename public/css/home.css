@@ -242,6 +242,11 @@ section p {
     width: 30%;
     height: 400px;
     position: relative;
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .card-title img {
@@ -307,4 +312,33 @@ section p {
 /* Footer */
 .container-footer {
     background-color: #fff;
+}
+
+/* Popup Whatsapp */
+#whatsapp-popup {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    padding: 8px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+}
+
+#whatsapp-popup a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+#whatsapp-popup img {
+    width: 25px;
+    margin-right: 10px;
+}
+
+#whatsapp-popup span {
+    font-weight: 500;
+    font-size: 15px;
 }
