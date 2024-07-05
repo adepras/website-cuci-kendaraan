@@ -149,13 +149,16 @@
         <section id="tentang-kami" class="py-5">
             <div class="container-tentang-kami">
                 <h2 class="mb-4">Tentang Kami</h2>
-                {{-- Apa aja di isi --}}
+                {{-- Tentang Website iWash --}}
             </div>
         </section>
         <section id="testimoni" class="py-5">
             <div class="container-testimoni">
-                <h4>Kata mereka yang telah menggunakan iWash</h4>
+                <div class="testimoni-title">
+                    <h3>Kata mereka yang telah<br>menggunakan iWash</h3>
+                </div>
             </div>
+            {{-- Slide Testimoni --}}
         </section>
     </main>
 
