@@ -107,7 +107,7 @@
                                 <li><img src="image/check-ill.png" alt="">vacuum</li>
                                 <li><img src="image/check-ill.png" alt="">Tire Polish</li>
                             </ul>
-                            <p class="price">Rp 100.000</p>
+                            <p class="price">Rp 50.000</p>
                         </div>
                         <div class="card">
                             <div class="card-title">
@@ -123,7 +123,7 @@
                                 <li><img src="image/check-ill.png" alt="">Spot Remover (Body)</li>
                                 <li><img src="image/check-ill.png" alt="">Engine Cleaning</li>
                             </ul>
-                            <p class="price">Rp 200.000</p>
+                            <p class="price">Rp 75.000</p>
                         </div>
                         <div class="card">
                             <div class="card-title">
@@ -138,7 +138,7 @@
                                 <li><img src="image/check-ill.png" alt="">Spot Remover (Window)</li>
                                 <li><img src="image/check-ill.png" alt="">Tar Remover</li>
                             </ul>
-                            <p class="price">Rp 300.000</p>
+                            <p class="price">Rp 100.000</p>
                         </div>
                     </div>
                 </div>
@@ -167,20 +167,35 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
     </script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    {{-- Mengatur Navbar --}}
     <script>
         var lastScrollTop = 0;
         $(window).scroll(function() {
             var scrollTop = $(this).scrollTop();
             if (scrollTop > lastScrollTop) {
-                // Scrolling down
+                // Scrolling bawah
                 $('.navbar').css('top', '-100px');
             } else {
-                // Scrolling up
+                // Scrolling atas
                 $('.navbar').css('top', '0');
             }
             lastScrollTop = scrollTop;
         });
     </script>
+    {{-- Mengatur scroll per-section --}}
+    <script>
+        document.querySelectorAll('nav a').forEach(anchor => {
+          anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            const offset = 100;
+            window.scrollTo({
+              top: target.offsetTop - offset,
+              behavior: 'smooth'
+            });
+          });
+        });
+      </script>
 </body>
 
 </html>
