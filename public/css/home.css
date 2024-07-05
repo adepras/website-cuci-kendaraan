@@ -5,6 +5,10 @@
     src: url('/public/font/Fontspring-DEMO-nutmeg-bold.otf') format('truetype');
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
 }
@@ -94,7 +98,7 @@ section {
 section h2 {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
-    color: #007bff;
+    color: #000;
     margin-bottom: 20px;
     text-align: center;
 }
@@ -168,7 +172,7 @@ section p {
 
 /* Layanan Kami */
 #layanan {
-    background-color: #e3f2fd;
+    background-color: #fff;
 }
 
 #layanan .container-layanan {
@@ -202,30 +206,105 @@ section p {
     padding-right: 10px;
 }
 
-
 /* Harga */
 #harga {
-    background-color: #f1f8ff;
+    background-color: #6dd3ff;
 }
 
 .container-harga h2 {
     color: #000;
 }
 
-#harga ul {
-    list-style: none;
-    padding: 0;
-    text-align: center;
+.container-harga img {
+    width: 30%;
+    height: auto;
 }
 
-#harga ul li {
+.harga-content {
+    display: flex;
+    align-items: center;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 0 20px;
+    text-align: center;
+    width: 30%;
+    height: 400px;
+    position: relative;
+}
+
+.card-title img {
+    width: 30px;
+    height: auto;
+    margin: 0;
+}
+
+.card-title h3 {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
-    color: #007bff;
-    margin: 10px 0;
+    color: #000;
+    height: 20%;
 }
+
+.card-title p {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    font-size: 13px;
+    height: 20%;
+}
+
+.text-card li {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    text-align: left;
+    font-size: 15px;
+    list-style: none;
+    padding: 5px 0;
+}
+
+.text-card img {
+    width: 20px;
+    height: auto;
+    margin-right: 5px;
+}
+
+.card .price {
+    font-weight: 700;
+    color: #000;
+    margin-top: 10px;
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 
 /* Tentang Kami */
 #tentang-kami {
-    background-color: #e3f2fd;
+    background-color: #fff;
+}
+
+.container-tentang-kami h2 {
+    color: #000;
+}
+
+/* Testimoni */
+#testimoni {
+    background-color: #6dd3ff;
+}
+
+/* Footer */
+.container-footer {
+    background-color: #fff;
 }

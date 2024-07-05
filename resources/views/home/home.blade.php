@@ -18,7 +18,7 @@
 </head>
 
 <body>
-    <Header>
+    <header>
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container">
                 <a class="navbar-brand" href="#">iWash</a>
@@ -57,9 +57,9 @@
                 <button class="btn btn-primary nav-daftar">Daftar</button>
             </div>
         </nav>
-    </Header>
+    </header>
 
-    <Body>
+    <main>
         <section id="home" class="py-5">
             <div class="container-home">
                 <div class="tagline">
@@ -73,14 +73,14 @@
                 </div>
             </div>
         </section>
-        <section id="layanan" class="py-5 bg-light">
+        <section id="layanan" class="py-5">
             <div class="container-layanan text-center">
                 <h2 class="mb-4">Sekarang, cuci kendaraan lebih mudah dan terjadwal tanpa ribet antri.</h2>
                 <p>Banyak orang sudah menggunakan layanan kami. <br>Apa yang kami tawarkan?</p>
                 <ul class="text-service">
                     <li><img src="image/fast-time-ill.png" alt="">Cepat Tanpa Repot Antri</li>
                     <li><img src="image/calendar-check-ill.png" alt="">Bebas Atur Jadwal</li>
-                    <li><img src="image/fast-time-ill.png" alt="">Kendaraan Aman Terjaga</li>
+                    <li><img src="image/shield-check-ill.png" alt="">Kendaraan Aman Terjaga</li>
                     <li><img src="image/group-ill.png" alt="">Profesional dan Tanggap</li>
                     <li><img src="image/drips-ill.png" alt="">Sabun/Foam Premium</li>
                     <li><img src="image/verify-ill.png" alt="">Garansi Cuci Kembali</li>
@@ -91,60 +91,77 @@
             <div class="container-harga">
                 <h2 class="mb-4">Harga bersahabat hasil mantap.</h2>
                 <p>Kami menawarkan paket pencucian sesuai dengan kebutuhan Anda.</p>
-                {{-- <div class="row row-cols-1 row-cols-md-4 g-4">
-                    <div class="col">
-                        <div class="card h-100">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Basic</h5>
-                                <p class="card-text">This is a longer card with supporting text below as a natural
-                                    lead-in to additional content. This content is a little bit longer.</p>
+                <div class="harga-content">
+                    <img src="image/character-top-ill.svg" alt="">
+                    <div class="card-container">
+                        <div class="card">
+                            <div class="card-title">
+                                <img src="image/p-basic.png" alt="">
+                                <h4>Basic</h4>
+                                <p>Membersihkan seluruh bagian mobil (eksterior dan interior) menggunakan sampo
+                                    Meguiar's Gold Class dan peralatan standar profesional.</p>
                             </div>
+                            <ul class="text-card">
+                                <li><img src="image/check-ill.png" alt="">Hand Wash</li>
+                                <li><img src="image/check-ill.png" alt="">Interior Cleaning</li>
+                                <li><img src="image/check-ill.png" alt="">vacuum</li>
+                                <li><img src="image/check-ill.png" alt="">Tire Polish</li>
+                            </ul>
+                            <p class="price">Rp 100.000</p>
+                        </div>
+                        <div class="card">
+                            <div class="card-title">
+                                <img src="image/p-standard.png" alt="">
+                                <h4>Standard</h4>
+                                <p>Paket Basic + membersihkan bercak atau noda berkerak pada permukaan cat dan bagian
+                                    mesin.</p>
+                            </div>
+                            <ul class="text-card">
+                                <li style="font-weight: 600"><img src="image/check-ill.png" alt="">All in
+                                    Basic</li>
+                                <li><img src="image/check-ill.png" alt="">Foam Wash</li>
+                                <li><img src="image/check-ill.png" alt="">Spot Remover (Body)</li>
+                                <li><img src="image/check-ill.png" alt="">Engine Cleaning</li>
+                            </ul>
+                            <p class="price">Rp 200.000</p>
+                        </div>
+                        <div class="card">
+                            <div class="card-title">
+                                <img src="image/p-professional.png" alt="">
+                                <h4>Professional</h4>
+                                <p>Paket Standard + membersihkan jamur, kerak pada kaca mobil dan noda aspal pada
+                                    permukaan cat mobil.</p>
+                            </div>
+                            <ul class="text-card">
+                                <li style="font-weight: 600"><img src="image/check-ill.png" alt="">All in
+                                    Standard</li>
+                                <li><img src="image/check-ill.png" alt="">Spot Remover (Window)</li>
+                                <li><img src="image/check-ill.png" alt="">Tar Remover</li>
+                            </ul>
+                            <p class="price">Rp 300.000</p>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="card h-100">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Standart</h5>
-                                <p class="card-text">This is a short card.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card h-100">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Profesional</h5>
-                                <p class="card-text">This is a longer card with supporting text below as a natural
-                                    lead-in to additional content.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card h-100">
-                            <img src="..." class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Elite</h5>
-                                <p class="card-text">This is a longer card with supporting text below as a natural
-                                    lead-in to additional content. This content is a little bit longer.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div> --}}
+                </div>
             </div>
         </section>
-        <section id="tentang-kami" class="py-5 bg-light">
-            <div class="container">
+        <section id="tentang-kami" class="py-5">
+            <div class="container-tentang-kami">
                 <h2 class="mb-4">Tentang Kami</h2>
-                <p>iWash is a professional vehicle washing and detailing service committed to providing top-quality care
-                    for your car. Our team of experts ensures that your vehicle receives the best treatment possible,
-                    leaving it spotless and shiny.</p>
-                <p>We value our customers and strive to deliver exceptional service every time. Our goal is to make your
-                    vehicle look its best and to provide a hassle-free experience.</p>
+                {{-- Apa aja di isi --}}
             </div>
         </section>
-    </Body>
+        <section id="testimoni" class="py-5">
+            <div class="container-testimoni">
+                <h4>Kata mereka yang telah menggunakan iWash</h4>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container-footer">
+            <h4>ini footer</h4>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
