@@ -3,6 +3,8 @@
 @section('title', 'Home - iWash')
 
 @section('content')
+    <link rel="stylesheet" href="{{ asset('css/home.css') }}">
+
     <section id="home" class="py-5">
         <div class="container-home">
             <div class="tagline">

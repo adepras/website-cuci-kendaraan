@@ -1,16 +1,13 @@
 @extends('layouts.app')
 
+@section('title', 'Tentang Kami - iWash')
+
 @section('content')
-    @include('partials.header')
-
-    <main>
-        <section id="about" class="py-5">
-            <div class="container">
-                <h1>Tentang Kami</h1>
-                <p>Informasi tentang kami...</p>
-            </div>
-        </section>
-    </main>
-
-    @include('partials.footer')
+    <section id="tentang-kami" class="py-5">
+        <div class="container-about">
+            <h1>Tentang Kami</h1>
+            <p>Informasi tentang perusahaan kami.</p>
+            <!-- Konten tambahan -->
+        </div>
+    </section>
 @endsection

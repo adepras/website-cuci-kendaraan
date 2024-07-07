@@ -1,7 +1,9 @@
+<link rel="stylesheet" href="{{ asset('css/header.css') }}">
+
 <header>
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
-            <a class="navbar-brand" href="#">iWash</a>
+            <a class="navbar-brand" href="/Home" onclick="window.location='{{ route('home') }}'">iWash</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -21,7 +23,8 @@
                         <a class="nav-link" href="#testimoni">Testimoni</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Tentang Kami</a>
+                        <a class="nav-link" href="/Tentang Kami"
+                            onclick="window.location='{{ route('about') }}'">Tentang Kami</a>
                     </li>
                 </ul>
             </div>
