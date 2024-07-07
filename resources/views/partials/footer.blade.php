@@ -1,20 +1,15 @@
 <footer>
     <div class="container-footer">
-        <div class="licence">
+        <div class="maker">
             <div class="iwash-logo">
                 <img src="image/iwash-full-logo.png" alt="">
             </div>
-            <ul class="licence-tile">
+            <ul class="maker-tile">
                 <li>
                     <h6>Powered by ADE STEAM</h6>
                 </li>
                 <a href=""><img src="image/gmail-ill.png" alt=""></a>
                 <a href=""><img src="image/maps-ill.png" alt=""></a>
-            </ul>
-            <ul class="copy-rights">
-                <li>
-                    <p><img src="image/c-circle.svg" alt="">iWash 2024. All rights reserved</p>
-                </li>
             </ul>
             <ul class="operasional">
                 <h6>Wilayah Operasional & Jam Kerja</h6>
@@ -43,5 +38,10 @@
             <li><a href="">FAQ</a></li>
             <li><a href="">Karir</a></li>
         </ul>
+    </div>
+    <div class="licence">
+        <p><img src="image/c-circle.svg" alt="">iWash 2024. All Rights Reserved</p>
+        <a href="">Term and Condition</a>
+        <a href="">Privacy Policy</a>
     </div>
 </footer>

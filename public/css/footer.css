@@ -11,19 +11,10 @@
     margin: -30px 10px;
 }
 
-.licence-tile img {
+.maker-tile img {
     width: 30px;
     height: auto;
 }
-
-.copy-rights img {
-    width: 14px;
-    height: auto;
-    margin-right: 3px;
-    margin-top: -4px;
-}
-
-
 
 .service,
 .about {
@@ -36,7 +27,7 @@
     margin-bottom: 10px;
 }
 
-.licence-tile li,
+.maker-tile li,
 .service li,
 .about li,
 .copy-rights li,
@@ -62,3 +53,30 @@
 .about a:hover {
     color: #000;
 }
+
+.licence {
+    display: flex;
+    justify-content: center;
+    background-color: #343a40;
+    gap: 20px;
+    padding: 15px 10px;
+}
+
+.licence p, a {
+    text-decoration: none;
+    margin: 0;
+    color: #f8f9fa;
+    font-size: 14px;
+}
+
+.licence a:hover {
+    text-decoration: underline;
+}
+
+.licence img {
+    width: 14px;
+    height: auto;
+    margin-right: 3px;
+    margin-top: -3px;
+}
+
