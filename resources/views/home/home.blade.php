@@ -31,16 +31,6 @@
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="#home">Home</a>
                         </li>
-                        {{-- <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Cuci Kendaraan
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Mobil</a></li>
-                                <li><a class="dropdown-item" href="#">Truk</a></li>
-                            </ul>
-                        </li> --}}
                         <li class="nav-item">
                             <a class="nav-link" href="#layanan">Layanan Kami</a>
                         </li>
@@ -172,7 +162,8 @@
                     <li>
                         <h6>Powered by ADE STEAM</h6>
                     </li>
-                    <img src="image/gmail-ill.png" alt="">
+                    <a href=""><img src="image/gmail-ill.png" alt=""></a>
+                    <a href=""><img src="image/maps-ill.png" alt=""></a>
                 </ul>
                 <ul class="copy-rights">
                     <li>
@@ -202,7 +193,7 @@
             <ul class="about">
                 <h6>Informasi</h6>
                 <li><a href="">Tentang Kami</a></li>
-                <li><a href="">Harga</a></li>
+                <li><a href="#harga">Harga</a></li>
                 <li><a href="">FAQ</a></li>
                 <li><a href="">Karir</a></li>
             </ul>
