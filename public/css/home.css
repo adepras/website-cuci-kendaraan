@@ -13,84 +13,6 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-/* Navbar */
-.navbar {
-    background-color: #2daae1;
-    padding: 15px;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    transition: top 0.3s;
-    z-index: 100;
-}
-
-.navbar-brand {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
-    color: #ffff;
-    font-size: 30px;
-}
-
-.navbar-nav .nav-link {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    color: #ffff;
-    transition: color 0.3s;
-}
-
-.navbar-brand:hover {
-    color: #2d7fc1;
-}
-
-.navbar-nav .nav-link:hover {
-    color: #e9ecef;
-}
-
-.navbar-nav .nav-link.active {
-    font-weight: 600;
-    color: #e9ecef;
-}
-
-.navbar-toggler {
-    border: none;
-}
-
-.navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%280, 123, 255, 0.5%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-}
-
-.nav-login {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    background-color: #2daae1;
-    border: 2px solid #ffff;
-    transition: background-color 0.3s, border-color 0.3s;
-    padding: 8px 30px;
-    margin-right: 25px;
-}
-
-.nav-login:hover {
-    background-color: #ffff;
-    border-color: #ffff;
-    color: #2daae1;
-}
-
-.nav-daftar {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    color: #2daae1;
-    background-color: #ffff;
-    border: 2px solid #ffff;
-    transition: background-color 0.3s, border-color 0.3s;
-    padding: 8px 26px;
-}
-
-.nav-daftar:hover {
-    background-color: #e9ecef;
-    border-color: #e9ecef;
-    color: #2daae1;
-}
-
 /* Sections */
 section {
     padding: 60px 0;
@@ -296,16 +218,6 @@ section p {
     transform: translateX(-50%);
 }
 
-
-/* Tentang Kami */
-#tentang-kami {
-    background-color: #fff;
-}
-
-.container-tentang-kami h2 {
-    color: #000;
-}
-
 /* Testimoni */
 #testimoni {
     background-color: #2277b9;
@@ -323,72 +235,6 @@ section p {
     text-align: center;
     color: #fff;
     margin-bottom: 30px;
-}
-
-/* Footer */
-.container-footer {
-    background-color: #fff;
-    width: 80%;
-    padding: 70px 70px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.iwash-logo img {
-    width: 120px;
-    margin: -30px 10px;
-}
-
-.licence-tile img {
-    width: 30px;
-    height: auto;
-}
-
-.copy-rights img {
-    width: 14px;
-    height: auto;
-    margin-right: 3px;
-    margin-top: -4px;
-}
-
-
-
-.service,
-.about {
-    padding: 15px;
-}
-
-.service,
-.about,
-.operasional h6 {
-    margin-bottom: 10px;
-}
-
-.licence-tile li,
-.service li,
-.about li,
-.copy-rights li,
-.operasional li {
-    list-style: none;
-    margin-bottom: 5px;
-}
-
-.operasional p {
-    color: #333;
-    font-size: 14px;
-    margin: 0;
-}
-
-.service a,
-.about a {
-    text-decoration: none;
-    color: #2d7fc1;
-    font-size: 14px;
-}
-
-.service a:hover,
-.about a:hover {
-    color: #000;
 }
 
 /* Popup Whatsapp */

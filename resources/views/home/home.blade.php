@@ -14,42 +14,13 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('css/header.css') }}">
     <link rel="stylesheet" href="{{ asset('css/home.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/footer.css') }}">
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container">
-                <a class="navbar-brand" href="#">iWash</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#home">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#layanan">Layanan Kami</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#harga">Harga</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#tentang-kami">Tentang Kami</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#testimoni">Testimoni</a>
-                        </li>
-                    </ul>
-                </div>
-                <button class="btn btn-primary nav-login">Login</button>
-                <button class="btn btn-primary nav-daftar">Daftar</button>
-            </div>
-        </nav>
-    </header>
+    @include('partials.header')
 
     <main>
         <section id="home" class="py-5">
@@ -136,12 +107,6 @@
                 </div>
             </div>
         </section>
-        <section id="tentang-kami" class="py-5">
-            <div class="container-tentang-kami">
-                <h2 class="mb-4">Tentang Kami</h2>
-                {{-- Tentang Website iWash --}}
-            </div>
-        </section>
         <section id="testimoni" class="py-5">
             <div class="container-testimoni">
                 <div class="testimoni-title">
@@ -150,55 +115,10 @@
             </div>
             {{-- Slide Testimoni --}}
         </section>
+        @yield('about')
     </main>
 
-    <footer>
-        <div class="container-footer">
-            <div class="licence">
-                <div class="iwash-logo">
-                    <img src="image/iwash-full-logo.png" alt="">
-                </div>
-                <ul class="licence-tile">
-                    <li>
-                        <h6>Powered by ADE STEAM</h6>
-                    </li>
-                    <a href=""><img src="image/gmail-ill.png" alt=""></a>
-                    <a href=""><img src="image/maps-ill.png" alt=""></a>
-                </ul>
-                <ul class="copy-rights">
-                    <li>
-                        <p><img src="image/c-circle.svg" alt="">iWash 2024. All rights reserved</p>
-                    </li>
-                </ul>
-                <ul class="operasional">
-                    <h6>Wilayah Operasional & Jam Kerja</h6>
-                    <li>
-                        <p>Kutoarjo</p>
-                    </li>
-                    <li>
-                        <p>Senin - Minggu (08.00-16.00 WIB)</p>
-                    </li>
-                </ul>
-            </div>
-            <ul class="service">
-                <h6>Layanan</h6>
-                <li><a href="">Cuci Mobil Berlangganan</a></li>
-                <li><a href="">Satu Kali Cuci</a></li>
-                <li><a href="">Salon Mobil Interior</a></li>
-                <li><a href="">Salon Mobil Eksterior</a></li>
-                <li><a href="">Salon Mobil Kaca</a></li>
-                <li><a href="">Salon Mobil Mesin</a></li>
-                <li><a href="">Salon Mobil Ban & Velg</a></li>
-            </ul>
-            <ul class="about">
-                <h6>Informasi</h6>
-                <li><a href="">Tentang Kami</a></li>
-                <li><a href="#harga">Harga</a></li>
-                <li><a href="">FAQ</a></li>
-                <li><a href="">Karir</a></li>
-            </ul>
-        </div>
-    </footer>
+    @include('partials.footer')
 
     <div id="whatsapp-popup">
         <a href="https://wa.me/" target="_blank">
