@@ -11,7 +11,9 @@
                     <h6>Powered by ADE STEAM</h6>
                 </li>
                 <a href=""><img src="image/gmail-ill.png" alt=""></a>
-                <a href=""><img src="image/maps-ill.png" alt=""></a>
+                <a
+                    href="https://www.google.co.id/maps/place/ADE+STEAM/@-7.67907,109.915836,21z/data=!4m6!3m5!1s0x2e7ac1acbe6ca2c7:0xfb09fe711edf48e8!8m2!3d-7.6790578!4d109.915753!16s%2Fg%2F11s83lqln7?entry=ttu"><img
+                        src="image/maps-ill.png" alt=""></a>
             </ul>
             <ul class="operasional">
                 <h6>Wilayah Operasional & Jam Kerja</h6>

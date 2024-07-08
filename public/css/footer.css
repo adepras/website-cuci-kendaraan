@@ -14,6 +14,7 @@
 .maker-tile img {
     width: 30px;
     height: auto;
+    margin-right: 5px;
 }
 
 .service,
