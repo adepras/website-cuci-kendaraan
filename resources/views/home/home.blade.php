@@ -11,7 +11,7 @@
                 <h4>Cuci dan Salon Mobil Profesional<img src="image/patch-check-fill.svg" alt=""></h4>
                 <p>Tidak perlu menunggu lama lagi saat ingin mencuci kendaraan Anda<br>Dan kami siap membersihkan
                     kendaraan Anda kapanpun dibutuhkan.</p>
-                <button class="btn btn-secondary btn-pesan">Pesan Sekarang</button>
+                <button class="btn btn-secondary btn-pesan">Pelajari Lebih Lanjut</button>
             </div>
             <div class="image-container">
                 <img src="image/car-wash-ill.png" alt="" class="half-size">
