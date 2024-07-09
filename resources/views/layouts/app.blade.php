@@ -14,6 +14,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 </head>
 
 <body>
@@ -32,35 +33,13 @@
         </a>
     </div>
 
+    <div id="back-to-top"><img src="image/back-to-top-ill.png" alt=""></div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
     </script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-        var lastScrollTop = 0;
-        $(window).scroll(function() {
-            var scrollTop = $(this).scrollTop();
-            if (scrollTop > lastScrollTop) {
-                $('.navbar').css('top', '-100px');
-            } else {
-                $('.navbar').css('top', '0');
-            }
-            lastScrollTop = scrollTop;
-        });
-    </script>
-    <script>
-        document.querySelectorAll('nav a').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                const offset = 100;
-                window.scrollTo({
-                    top: target.offsetTop - offset,
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
+    <script src="{{ asset('javascript/app.js') }}"></script>
     @stack('scripts')
 </body>
 

@@ -3,7 +3,7 @@
 <header>
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
-            <a class="navbar-brand" href="/Home" onclick="window.location='{{ route('home') }}'">iWash</a>
+            <a class="navbar-brand" href="{{ route('home') }}">iWash</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -11,20 +11,19 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#home">Home</a>
+                        <a class="nav-link" href="#">Cuci Mobil</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#layanan">Layanan Kami</a>
+                        <a class="nav-link" href="#">Detailing Mobil</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#harga">Harga</a>
+                        <a class="nav-link" href="{{ route('price') }}">Harga</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#testimoni">Testimoni</a>
+                        <a class="nav-link" href="#">Paket Super</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/Tentang Kami"
-                            onclick="window.location='{{ route('about') }}'">Tentang Kami</a>
+                        <a class="nav-link" href="{{ route('about') }}">Tentang Kami</a>
                     </li>
                 </ul>
             </div>

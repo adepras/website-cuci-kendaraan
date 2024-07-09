@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="{{ asset('css/footer.css') }}">
 
 <footer>
-    <div class="container-footer">
+    <div class="container-footer mt-5">
         <div class="maker">
             <div class="iwash-logo">
                 <img src="image/iwash-full-logo.png" alt="">
@@ -18,7 +18,7 @@
             <ul class="operasional">
                 <h6>Wilayah Operasional & Jam Kerja</h6>
                 <li>
-                    <p>Kutoarjo</p>
+                    <p>Desa Wirun, Kec. Kutoarjo</p>
                 </li>
                 <li>
                     <p>Senin - Minggu (08.00-16.00 WIB)</p>
@@ -27,20 +27,19 @@
         </div>
         <ul class="service">
             <h6>Layanan</h6>
-            <li><a href="">Cuci Mobil Berlangganan</a></li>
-            <li><a href="">Satu Kali Cuci</a></li>
-            <li><a href="">Salon Mobil Interior</a></li>
-            <li><a href="">Salon Mobil Eksterior</a></li>
-            <li><a href="">Salon Mobil Kaca</a></li>
-            <li><a href="">Salon Mobil Mesin</a></li>
-            <li><a href="">Salon Mobil Ban & Velg</a></li>
+            <li><a href="">Cuci Mobil</a></li>
+            <li><a href="">Detailing Interior</a></li>
+            <li><a href="">Detailing Eksterior</a></li>
+            <li><a href="">Detailing Kaca</a></li>
+            <li><a href="">Detailing Mesin</a></li>
+            <li><a href="">Detailing Ban & Velg</a></li>
         </ul>
         <ul class="about">
             <h6>Informasi</h6>
             <li><a href="">Tentang Kami</a></li>
-            <li><a href="#harga">Harga</a></li>
-            <li><a href="">FAQ</a></li>
+            <li><a href="">Harga</a></li>
             <li><a href="">Karir</a></li>
+            <li><a href="">FAQ</a></li>
         </ul>
     </div>
     <div class="licence">

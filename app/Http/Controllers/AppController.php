@@ -12,6 +12,11 @@ class AppController extends Controller
         return view('home.home');
     }
 
+    public function price()
+    {
+        return view('home.price');
+    }
+
     public function about()
     {
         return view('home.about');
