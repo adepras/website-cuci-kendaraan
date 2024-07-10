@@ -36,8 +36,8 @@
         </ul>
         <ul class="about">
             <h6>Informasi</h6>
-            <li><a href="">Tentang Kami</a></li>
-            <li><a href="">Harga</a></li>
+            <li><a href="{{ route('about') }}">Tentang Kami</a></li>
+            <li><a href="{{ route('price') }}">Harga</a></li>
             <li><a href="">Karir</a></li>
             <li><a href="">FAQ</a></li>
         </ul>
