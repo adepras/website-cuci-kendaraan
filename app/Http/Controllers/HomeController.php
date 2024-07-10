@@ -10,8 +10,7 @@ class HomeController extends Controller
     public function index()
     {
         $testimoni = Testimoni::all();
-         
-        return view('home.home', compact('testimoni'));
 
+        return view('home.home', compact('testimoni'));
     }
 }

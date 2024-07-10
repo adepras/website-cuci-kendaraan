@@ -2,8 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AppController;
+use App\Http\Controllers\HomeController;
 
-Route::get('/', [AppController::class, 'home'])->name('home');
+Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/price', [AppController::class, 'price'])->name('price');
 Route::get('/about', [AppController::class, 'about'])->name('about');
 
