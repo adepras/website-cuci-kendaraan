@@ -9,9 +9,9 @@ class HomeController extends Controller
 {
     public function index()
     {
-        $testimonies = Testimoni::all(); // Mengambil semua data testimoni dari model Testimoni
+        $testimoni = Testimoni::all();
          
-        return view('home', compact('testimonies'));
+        return view('home.home', compact('testimoni'));
 
     }
 }
