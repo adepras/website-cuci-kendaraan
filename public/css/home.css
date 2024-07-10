@@ -274,8 +274,11 @@ body {
     width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    /* Center align content horizontally */
     background-color: #2277b9;
-    height: auto;
+    padding: 50px 0;
+    /* Padding to add some space on top and bottom */
 }
 
 .testimoni-title h3 {
@@ -283,4 +286,45 @@ body {
     text-align: center;
     color: #fff;
     margin-bottom: 30px;
+}
+
+/* Slider styles */
+.slider {
+    width: 80%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    scroll-snap-type: x mandatory;
+}
+
+.slide {
+    min-width: 300px;
+    scroll-snap-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimoni-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+}
+
+.testimoni-item p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #333;
+}
+
+.testimoni-item .nama {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #2277b9;
 }
