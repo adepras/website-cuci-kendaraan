@@ -5,7 +5,6 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    /* Ensure the items can wrap */
 }
 
 .iwash-logo img {
@@ -84,7 +83,6 @@ a {
     margin-top: -2px;
 }
 
-/* Media query for mobile devices */
 @media (max-width: 768px) {
     .container-footer {
         width: 100%;

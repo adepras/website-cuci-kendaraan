@@ -27,7 +27,7 @@
         <h2 class="mb-4 mt-5">Sekarang, cuci kendaraan lebih mudah dan tanpa ribet antri.</h2>
         <p>Banyak orang sudah menggunakan layanan kami. <br>Apa yang kami tawarkan?</p>
         <img src="image/car-ill.png" alt="" id="car-ill">
-        <ul class="text-service mt-5 mb-5">
+        <ul class="text-service mt-5">
             <li><img src="image/fast-time-ill.png" alt="">Cepat Tanpa Repot Antri</li>
             <li><img src="image/calendar-check-ill.png" alt="">Bebas Atur Jadwal</li>
             <li><img src="image/shield-check-ill.png" alt="">Kendaraan Aman Terjaga</li>
@@ -35,8 +35,54 @@
             <li><img src="image/drips-ill.png" alt="">Sabun/Foam Premium</li>
             <li><img src="image/verify-ill.png" alt="">Garansi Cuci Kembali</li>
         </ul>
+    </div>
+    <div class="container-package py-5">
         <h2 class="mb-4 mt-5">Pilihan Paket Lengkap dan Kualitas Terjamin <br>Ayo Cuci Mobil Anda Sekarang!</h2>
         <p>Pilihan paket dan harga yang bervariasi sesuai kebutuhanmu.</p>
+        <div class="card-container">
+            <div class="card">
+                <div class="card-title">
+                    <img src="image/image-empty-ill.png" alt="">
+                    <h5>Cuci Mobil</h5>
+                    <a href="">Lihat detail</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-title">
+                    <img src="image/image-empty-ill.png" alt="">
+                    <h5>Detailing Interior</h5>
+                    <a href="">Lihat detail</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-title">
+                    <img src="image/image-empty-ill.png" alt="">
+                    <h5>Detailing Eksterior</h5>
+                    <a href="">Lihat detail</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-title">
+                    <img src="image/image-empty-ill.png" alt="">
+                    <h5>Detailing Kaca</h5>
+                    <a href="">Lihat detail</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-title">
+                    <img src="image/image-empty-ill.png" alt="">
+                    <h5>Detailing Mesin</h5>
+                    <a href="">Lihat detail</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-title">
+                    <img src="image/image-empty-ill.png" alt="">
+                    <h5>Detailing Ban & Velg</h5>
+                    <a href="">Lihat detail</a>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="container-testimoni py-5">
         <div class="testimoni-title">
