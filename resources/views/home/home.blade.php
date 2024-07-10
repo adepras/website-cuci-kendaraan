@@ -88,5 +88,16 @@
         <div class="testimoni-title">
             <h3>Kata mereka yang telah<br>menggunakan iWash</h3>
         </div>
+        <div class="slider">
+            @foreach($testinomi as $testimoni)
+            <div class="slide">
+                <div class="testimoni-item">
+                    <p>{{ $testimoni->quote }}</p>
+                    <span class="nama">{{ $testimoni->nama }}</span>
+                    <span class="jabatan">{{ $testimoni->jabatan }}</span>
+                </div>
+            </div>
+            @endforeach            
+        </div>
     </div>
 @endsection
