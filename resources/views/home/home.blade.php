@@ -6,15 +6,22 @@
     <link rel="stylesheet" href="{{ asset('css/home.css') }}">
 
     <div class="container-home py-5">
-        <div class="tagline">
-            <h4>Cuci dan Salon Mobil Profesional<img src="image/patch-check-fill.svg" alt=""></h4>
-            <p>Tidak perlu menunggu lama lagi saat ingin mencuci kendaraan Anda<br>Dan kami siap membersihkan
-                kendaraan Anda kapanpun dibutuhkan.</p>
-            <button class="btn-learn">Pelajari Lebih Lanjut</button>
+        <div class="top-content">
+            <div class="tagline">
+                <h4>Cuci dan Salon Mobil Profesional<img src="image/patch-check-fill.svg" alt=""></h4>
+                <p>Tidak perlu menunggu lama lagi saat ingin mencuci kendaraan Anda<br>Dan kami siap membersihkan kendaraan
+                    Anda kapanpun dibutuhkan.</p>
+                <button class="btn-learn">Pelajari Lebih Lanjut</button>
+            </div>
+            <div class="image-container">
+                <img src="image/car-wash-ill.png" alt="" class="half-size">
+            </div>
         </div>
-        <div class="image-container">
-            <img src="image/car-wash-ill.png" alt="" class="half-size">
-        </div>
+        <ul class="slogan">
+            <li><img src="image/check-box-ill.png" alt="">Bersih</li>
+            <li><img src="image/check-box-ill.png" alt="">Cepat</li>
+            <li><img src="image/check-box-ill.png" alt="">Murah</li>
+        </ul>
     </div>
     <div class="container-layanan py-5">
         <h2 class="mb-4 mt-5">Sekarang, cuci kendaraan lebih mudah dan tanpa ribet antri.</h2>

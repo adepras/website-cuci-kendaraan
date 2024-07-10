@@ -15,43 +15,66 @@ body {
 
 /* Home */
 .container-home {
-    display: flex;
-    align-items: center;
     padding: 0 80px;
     background-color: #2daae1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.half-size {
+.top-content {
+    display: flex;
     width: 100%;
-    height: auto;
-    margin: 30px 0;
-}
-
-.image-container {
-    flex: 1;
-    margin-right: 20px;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .tagline {
     flex: 1;
+    text-align: left;
 }
 
-.tagline img {
-    padding-left: 5px;
+.image-container {
+    flex: 1;
+    text-align: right;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+}
+
+.slogan {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.slogan li {
+    list-style: none;
+    font-size: 30px;
+    color: #222;
+    font-weight: 500;
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+}
+
+.slogan img {
+    width: 40px;
+    height: auto;
 }
 
 .tagline h4 {
     font-size: 28px;
     color: #000;
     font-weight: 600;
-    text-align: left;
     padding: 20px 0;
 }
 
 .tagline p {
     font-size: 17px;
     color: #333;
-    text-align: left;
 }
 
 .btn-learn {
@@ -69,6 +92,37 @@ body {
     color: #222;
 }
 
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .container-home {
+        padding: 0 20px;
+    }
+
+    .top-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-container {
+        display: none;
+    }
+
+    .slogan {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .slogan li {
+        margin: 5px 0;
+        font-size: 17px;
+    }
+
+    .slogan img {
+        width: 20px;
+    }
+}
+
 /* Layanan */
 .container-layanan {
     width: 100%;
@@ -81,7 +135,7 @@ body {
 }
 
 .container-layanan p {
-    color: #333 ;
+    color: #333;
 }
 
 .container-layanan img {
