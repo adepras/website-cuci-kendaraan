@@ -28,7 +28,7 @@
                 </ul>
                 <div class="d-flex nav-button">
                     <button class="btn btn-primary nav-login">Login</button>
-                    <button class="btn btn-primary nav-daftar">Daftar</button>
+                    <button class="btn btn-primary nav-register">Daftar</button>
                 </div>
             </div>
         </div>
