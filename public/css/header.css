@@ -40,32 +40,30 @@
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%280, 123, 255, 0.5%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
-.nav-login {
+.nav-login,
+.nav-register {
     font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    background-color: #2daae1;
+    border-radius: 8px;
     border: 2px solid #ffff;
+    font-weight: 500;
     transition: background-color 0.3s, border-color 0.3s;
+
+}
+
+.nav-login {
+    color: #fff;
+    background-color: #2daae1;
     padding: 8px 30px;
     margin-right: 25px;
 }
 
-.nav-login:hover {
-    background-color: #ffff;
-    border-color: #ffff;
-    color: #2daae1;
-}
-
 .nav-register {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
     color: #2daae1;
     background-color: #ffff;
-    border: 2px solid #ffff;
-    transition: background-color 0.3s, border-color 0.3s;
     padding: 8px 26px;
 }
 
+.nav-login:hover,
 .nav-register:hover {
     background-color: #e9ecef;
     border-color: #e9ecef;

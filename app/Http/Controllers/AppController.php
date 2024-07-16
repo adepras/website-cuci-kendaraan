@@ -21,4 +21,14 @@ class AppController extends Controller
     {
         return view('home.about');
     }
+
+    public function menu()
+    {
+        return view('home.menu');
+    }
+
+    public function wash()
+    {
+        return view('home.wash');
+    }
 }

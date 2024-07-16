@@ -8,3 +8,4 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/price', [AppController::class, 'price'])->name('price');
 Route::get('/about', [AppController::class, 'about'])->name('about');
 
+Route::get('/menu', [AppController::class, 'menu'])->name('menu');

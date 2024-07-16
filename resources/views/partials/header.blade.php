@@ -11,7 +11,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Cuci Mobil</a>
+                        <a class="nav-link" href="{{ route('menu') }}">Cuci Mobil</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Detailing Mobil</a>
@@ -27,8 +27,8 @@
                     </li>
                 </ul>
                 <div class="d-flex nav-button">
-                    <button class="btn btn-primary nav-login">Login</button>
-                    <button class="btn btn-primary nav-register">Daftar</button>
+                    <button class="nav-login">Login</button>
+                    <button class="nav-register">Daftar</button>
                 </div>
             </div>
         </div>
