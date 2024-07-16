@@ -14,7 +14,7 @@
                         <a class="nav-link" href="{{ route('menu') }}">Cuci Mobil</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Detailing Mobil</a>
+                        <a class="nav-link" href="{{ route('pack') }}">Detailing Mobil</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('price') }}">Harga</a>

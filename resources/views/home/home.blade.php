@@ -42,42 +42,42 @@
         <div class="card-container">
             <div class="card">
                 <div class="card-title">
-                    <img src="image/image-empty-ill.png" alt="">
+                    <img src="image/cuci-mobil-ill.png" alt="">
                     <h5>Cuci Mobil</h5>
                     <a href="">Lihat detail</a>
                 </div>
             </div>
             <div class="card">
                 <div class="card-title">
-                    <img src="image/image-empty-ill.png" alt="">
+                    <img src="image/interior-ill.png" alt="">
                     <h5>Detailing Interior</h5>
                     <a href="">Lihat detail</a>
                 </div>
             </div>
             <div class="card">
                 <div class="card-title">
-                    <img src="image/image-empty-ill.png" alt="">
+                    <img src="image/eksterior-ill.png" alt="">
                     <h5>Detailing Eksterior</h5>
                     <a href="">Lihat detail</a>
                 </div>
             </div>
             <div class="card">
                 <div class="card-title">
-                    <img src="image/image-empty-ill.png" alt="">
+                    <img src="image/kaca-ill.png" alt="">
                     <h5>Detailing Kaca</h5>
                     <a href="">Lihat detail</a>
                 </div>
             </div>
             <div class="card">
                 <div class="card-title">
-                    <img src="image/image-empty-ill.png" alt="">
+                    <img src="image/mesin-ill.png" alt="">
                     <h5>Detailing Mesin</h5>
                     <a href="">Lihat detail</a>
                 </div>
             </div>
             <div class="card">
                 <div class="card-title">
-                    <img src="image/image-empty-ill.png" alt="">
+                    <img src="image/ban-velg-ill.png" alt="">
                     <h5>Detailing Ban & Velg</h5>
                     <a href="">Lihat detail</a>
                 </div>
