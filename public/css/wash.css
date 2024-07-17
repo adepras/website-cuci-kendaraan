@@ -1,0 +1,98 @@
+.container-wash {
+    width: 100%;
+    padding: 0 150px;
+}
+
+.container-wash h2 {
+    font-weight: 600;
+}
+
+.container-wash a {
+    color: #2277b9;
+    font-size: 14px;
+}
+
+.container-wash a img {
+    margin-right: 8px;
+}
+
+.car-category {
+    width: fit-content;
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+
+.car-category img {
+    width: 88px;
+}
+
+/* menu1 */
+.price-menu {
+    width: 80%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 12px;
+    gap: 20px;
+}
+
+.card-price {
+    width: 25%;
+    border: 1px solid #bebebe;
+    border-radius: 10px;
+    padding: 16px;
+}
+
+.card-price ul {
+    margin: 0;
+    padding: 0;
+}
+
+.card-price h5 {
+    color: #333;
+    text-align: start;
+}
+
+.card-price img {
+    width: 18px;
+    height: auto;
+    margin: -2px 8px 0 0;
+}
+
+.card-service img {
+    width: 16px;
+    margin: -2px 10px 0 0;
+}
+
+.card-service li {
+    list-style: none;
+    padding: 3px 0;
+    font-size: 14px;
+    color: #333;
+}
+
+.price p {
+    font-size: 13px;
+    color: #777;
+    margin: 0;
+}
+
+.price h6 {
+    margin: 0;
+    color: #333;
+    font-weight: 600;
+}
+
+.select-price {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.form-check-input:checked {
+    background-color: #333;
+    border-color: #333;
+}
+
+.form-check-input:focus {
+    box-shadow: none;
+}

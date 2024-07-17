@@ -9,4 +9,5 @@ Route::get('/price', [AppController::class, 'price'])->name('price');
 Route::get('/about', [AppController::class, 'about'])->name('about');
 
 Route::get('/menu', [AppController::class, 'menu'])->name('menu');
+Route::get('/wash', [AppController::class, 'wash'])->name('wash');
 Route::get('/detailing', [AppController::class, 'pack'])->name('pack');

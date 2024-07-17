@@ -25,12 +25,12 @@ class AppController extends Controller
     // Cuci Mobil
     public function menu()
     {
-        return view('home.menu');
+        return view('menu.menu');
     }
 
     public function wash()
     {
-        return view('home.wash');
+        return view('menu.wash');
     }
     // Detailing Mobil
     public function pack()

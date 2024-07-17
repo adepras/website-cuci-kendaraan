@@ -8,7 +8,7 @@
             </div>
             <ul class="maker-tile">
                 <li>
-                    <h6>Powered by ADE STEAM</h6>
+                    <h6>Supported by ADE STEAM</h6>
                 </li>
                 <a href=""><img src="image/gmail-ill.png" alt=""></a>
                 <a

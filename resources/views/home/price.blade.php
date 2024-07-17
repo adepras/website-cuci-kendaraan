@@ -21,7 +21,7 @@
                     <ul class="text-card">
                         <li><img src="image/check-ill.png" alt="">Hand Wash</li>
                         <li><img src="image/check-ill.png" alt="">Interior Cleaning</li>
-                        <li><img src="image/check-ill.png" alt="">vacuum</li>
+                        <li><img src="image/check-ill.png" alt="">Vacuum</li>
                         <li><img src="image/check-ill.png" alt="">Tire Polish</li>
                     </ul>
                     <p class="price">Rp 50.000</p>
