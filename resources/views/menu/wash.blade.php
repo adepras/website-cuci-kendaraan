@@ -12,7 +12,7 @@
         <div class="category-menu mt-5 mb-2" id="menu1" style="display: none;">
             <h5>Pilih Paket Satu Kali Cuci</h5>
             <div class="price-menu">
-                <div class="card-price">
+                <div class="card-price" for="basic">
                     <h5><img src="image/p-basic.png" alt="">Basic</h5>
                     <ul class="card-service">
                         <li><img src="image/check-ill.png" alt="">Hand Wash</li>
@@ -23,6 +23,7 @@
                     <div class="price mt-3">
                         <p>Harga</p>
                         <h6>Rp50.000</h6>
+                        <p class="estimation mt-3"><img src="image/stopwatch.svg" alt="">Estimasi 1 Jam</p>
                     </div>
                     <div class="select-price">
                         <input class="form-check-input" type="radio" name="flexRadioDefault" id="basic"
@@ -37,9 +38,10 @@
                         <li><img src="image/check-ill.png" alt="">Spot Remover (Body)</li>
                         <li><img src="image/check-ill.png" alt="">Engine Cleaning</li>
                     </ul>
-                    <div class="price mt-3">
+                    <div class="price">
                         <p>Harga</p>
                         <h6>Rp60.000</h6>
+                        <p class="estimation mt-3"><img src="image/stopwatch.svg" alt="">Estimasi 1 Jam</p>
                     </div>
                     <div class="select-price">
                         <input class="form-check-input" type="radio" name="flexRadioDefault" id="standard"
@@ -57,6 +59,7 @@
                     <div class="price mt-3">
                         <p>Harga</p>
                         <h6>Rp70.000</h6>
+                        <p class="estimation mt-3"><img src="image/stopwatch.svg" alt="">Estimasi 1 Jam</p>
                     </div>
                     <div class="select-price">
                         <input class="form-check-input" type="radio" name="flexRadioDefault" id="professional"
@@ -71,15 +74,74 @@
             <h5>Pilih Paket Salon Mobil / Detailing</h5>
             <p class="mt-4">Ukuran mobil Anda</p>
             <div class="car-category">
-                <img src="image/small-car-ill.png" alt="">
-                <img src="image/medium-car-ill.png" alt="">
-                <img src="image/large-car-ill.png" alt="">
+                <button class="btn-car" id="large-car"><img src="image/large-car-ill.png" alt="">Besar</button>
+                <button class="btn-car" id="small-car"><img src="image/small-car-ill.png" alt="">Kecil</button>
+                <button class="btn-car" id="medium-car"><img src="image/medium-car-ill.png" alt="">Sedang</button>
             </div>
-            <a href="">Cari tahu ukuran mobil anda <img src="image/arrow-right.svg" alt=""></a>
+            <a href="">Cari tahu ukuran mobil Anda <img src="image/arrow-right.svg" alt=""></a>
+            <p class="mt-4">Harga di bawah sudah sesuai dengan ukuran mobil Anda</p>
             <div class="price-menu">
-
+                <div class="card-price">
+                    <h5><img src="image/p-detailing.png" alt="">Detailing Interior</h5>
+                    <div class="price mt-3">
+                        <p>Harga</p>
+                        <h6>Rp50.000</h6>
+                        <p class="estimation mt-3"><img src="image/stopwatch.svg" alt="">Estimasi 1 Jam</p>
+                    </div>
+                    <div class="select-price">
+                        <input class="form-check-input" type="checkbox" name="flexCheckboxDefault" id="d-interior"
+                            value="Detailing Interior">
+                    </div>
+                </div>
+                <div class="card-price">
+                    <h5><img src="image/p-detailing.png" alt="">Detailing Eksterior</h5>
+                    <div class="price mt-3">
+                        <p>Harga</p>
+                        <h6>Rp60.000</h6>
+                        <p class="estimation mt-3"><img src="image/stopwatch.svg" alt="">Estimasi 1 Jam</p>
+                    </div>
+                    <div class="select-price">
+                        <input class="form-check-input" type="checkbox" name="flexCheckboxDefault" id="d-eksterior"
+                            value="Detailing Eksterior">
+                    </div>
+                </div>
+                <div class="card-price">
+                    <h5><img src="image/p-detailing.png" alt="">Detailing Kaca Mobil</h5>
+                    <div class="price mt-3">
+                        <p>Harga</p>
+                        <h6>Rp70.000</h6>
+                        <p class="estimation mt-3"><img src="image/stopwatch.svg" alt="">Estimasi 1 Jam</p>
+                    </div>
+                    <div class="select-price">
+                        <input class="form-check-input" type="checkbox" name="flexCheckboxDefault" id="d-kaca"
+                            value="Detailing Kaca Mobil">
+                    </div>
+                </div>
+                <div class="card-price">
+                    <h5><img src="image/p-detailing.png" alt="">Detailing Mesin Mobil</h5>
+                    <div class="price mt-3">
+                        <p>Harga</p>
+                        <h6>Rp50.000</h6>
+                        <p class="estimation mt-3"><img src="image/stopwatch.svg" alt="">Estimasi 1 Jam</p>
+                    </div>
+                    <div class="select-price">
+                        <input class="form-check-input" type="checkbox" name="flexCheckboxDefault" id="d-mesin"
+                            value="Detailing Mesin Mobil">
+                    </div>
+                </div>
+                <div class="card-price">
+                    <h5><img src="image/p-detailing.png" alt="">Detailing Ban & Velg</h5>
+                    <div class="price mt-3">
+                        <p>Harga</p>
+                        <h6>Rp60.000</h6>
+                        <p class="estimation mt-3"><img src="image/stopwatch.svg" alt="">Estimasi 1 Jam</p>
+                    </div>
+                    <div class="select-price">
+                        <input class="form-check-input" type="checkbox" name="flexCheckboxDefault" id="d-ban-velg"
+                            value="Detailing Ban & Velg">
+                    </div>
+                </div>
             </div>
-
         </div>
 
         {{-- Tampilan Paket Super --}}
@@ -91,18 +153,19 @@
                 <img src="image/medium-car-ill.png" alt="">
                 <img src="image/large-car-ill.png" alt="">
             </div>
-            <a href="">Cari tahu ukuran mobil anda <img src="image/arrow-right.svg" alt=""></a>
+            <a href="">Cari tahu ukuran mobil Anda <img src="image/arrow-right.svg" alt=""></a>
             <div class="price-menu">
 
             </div>
-
         </div>
 
 
         {{-- Modal Order --}}
-        <div class="order-menu mt-5">
-            <button class="btn-reset">Reset</button>
-            <button class="btn-next">Lanjutkan</button>
+        <div class="price-menu">
+            <div class="order-menu mt-5">
+                <button class="btn-reset">Reset</button>
+                <button class="btn-next">Lanjutkan</button>
+            </div>
         </div>
     </div>
 
@@ -125,17 +188,36 @@
                 }
             });
 
+            $('input[name="flexCheckboxDefault"]').change(function() {
+                if ($('input[name="flexCheckboxDefault"]:checked').length > 0) {
+                    $('.order-menu').addClass('visible');
+                }
+            });
+
             $('.btn-reset').click(function() {
                 $('input[name="flexRadioDefault"]').prop('checked', false);
+                $('input[name="flexCheckboxDefault"]').prop('checked', false);
                 $('.order-menu').removeClass('visible');
             });
 
             $('.btn-next').click(function() {
-                var selectedValue = $('input[name="flexRadioDefault"]:checked').val();
-                if (selectedValue) {
-                    alert('You selected: ' + selectedValue);
-                    // Here you can also handle form submission or redirect
+                var selectedRadioValue = $('input[name="flexRadioDefault"]:checked').val();
+                var selectedCheckboxValues = $('input[name="flexCheckboxDefault"]:checked').map(function() {
+                    return this.value;
+                }).get();
+
+                var message = 'You selected: ' + (selectedRadioValue ? selectedRadioValue : 'None');
+                if (selectedCheckboxValues.length > 0) {
+                    message += '\nAdditional packages: ' + selectedCheckboxValues.join(', ');
                 }
+
+                alert(message);
+                // Add your logic here to handle the selected values
+            });
+
+            $('.card-price').click(function() {
+                var input = $(this).find('input[type="radio"], input[type="checkbox"]');
+                input.prop('checked', true).change();
             });
         });
     </script>

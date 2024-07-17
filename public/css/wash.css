@@ -17,29 +17,48 @@
 }
 
 .car-category {
-    width: fit-content;
-    border: 1px solid #333;
-    border-radius: 5px;
+    width: 60%;
+    padding: 12px;
 }
 
 .car-category img {
-    width: 88px;
+    width: 80px;
 }
 
-/* menu 1 */
+.btn-car {
+    width: 25%;
+    border: 1px solid #bebebe;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 2px 0;
+    margin: 0;
+    color: #333;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+/* Harga */
 .price-menu {
     width: 80%;
     display: flex;
-    justify-content: flex-start;
+    flex-wrap: wrap;
     padding: 12px;
     gap: 20px;
 }
 
 .card-price {
-    width: 25%;
+    width: 30%;
     border: 1px solid #bebebe;
     border-radius: 10px;
     padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-price:nth-child(4),
+.card-price:nth-child(5) {
+    width: calc(45%+20px);
 }
 
 .card-price ul {
@@ -70,6 +89,10 @@
     color: #333;
 }
 
+.price {
+    margin-top: auto;
+}
+
 .price p {
     font-size: 13px;
     color: #777;
@@ -97,24 +120,35 @@
     box-shadow: none;
 }
 
+/* Estimasi */
+.estimation {
+    width: 55%;
+    font-size: 12px !important;
+    text-align: center;
+    padding: 3px 0;
+    border-radius: 25px;
+    color: #2277b9 !important;
+    background-color: #abe6ff;
+}
+
 /* Order */
 .order-menu {
-    width: 62%;
+    width: 65%;
     background-color: #abdef3;
     border: 2px solid #abdef3;
     border-radius: 10px;
     padding: 10px;
-    margin-left: 12px;
     display: flex;
     justify-content: space-between;
 }
 
-.btn-reset, .btn-next {
+.btn-reset,
+.btn-next {
     font-size: 16px;
     font-weight: 500;
     border-radius: 8px;
-    padding: 8px 0;
-    width: 20%;
+    padding: 9px 0;
+    width: 30%;
 }
 
 .btn-reset {
