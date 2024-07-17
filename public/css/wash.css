@@ -26,7 +26,7 @@
     width: 88px;
 }
 
-/* menu1 */
+/* menu 1 */
 .price-menu {
     width: 80%;
     display: flex;
@@ -95,4 +95,44 @@
 
 .form-check-input:focus {
     box-shadow: none;
+}
+
+/* Order */
+.order-menu {
+    width: 62%;
+    background-color: #abdef3;
+    border: 2px solid #abdef3;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-reset, .btn-next {
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 8px;
+    padding: 8px 0;
+    width: 20%;
+}
+
+.btn-reset {
+    background-color: #f9f9f9;
+    color: #2277b9;
+    border: 1px solid #f9f9f9;
+}
+
+.btn-next {
+    background-color: #2277b9;
+    color: #fff;
+    border: 1px solid #2277b9;
+}
+
+.order-menu {
+    visibility: hidden;
+}
+
+.order-menu.visible {
+    visibility: visible;
 }

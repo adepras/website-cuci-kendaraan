@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'iWash | Pesan')
+@section('title', 'iWash | Pesan Layanan')
 
 @section('content')
     <link rel="stylesheet" href="{{ asset('css/wash.css') }}">
@@ -25,14 +25,14 @@
                         <h6>Rp50.000</h6>
                     </div>
                     <div class="select-price">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="basic"
+                            value="basic">
                     </div>
                 </div>
                 <div class="card-price">
                     <h5><img src="image/p-standard.png" alt="">Standard</h5>
                     <ul class="card-service">
-                        <li style="font-weight: 600"><img src="image/check-ill.png" alt="">All in
-                            Basic</li>
+                        <li style="font-weight: 600"><img src="image/check-ill.png" alt="">All in Basic</li>
                         <li><img src="image/check-ill.png" alt="">Foam Wash</li>
                         <li><img src="image/check-ill.png" alt="">Spot Remover (Body)</li>
                         <li><img src="image/check-ill.png" alt="">Engine Cleaning</li>
@@ -42,14 +42,14 @@
                         <h6>Rp60.000</h6>
                     </div>
                     <div class="select-price">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="standard"
+                            value="standard">
                     </div>
                 </div>
                 <div class="card-price">
-                    <h5> <img src="image/p-professional.png" alt="">Professional</h5>
+                    <h5><img src="image/p-professional.png" alt="">Professional</h5>
                     <ul class="card-service">
-                        <li style="font-weight: 600"><img src="image/check-ill.png" alt="">All in
-                            Standard</li>
+                        <li style="font-weight: 600"><img src="image/check-ill.png" alt="">All in Standard</li>
                         <li><img src="image/check-ill.png" alt="">Spot Remover </li>
                         <li style="margin-left: 26px">(Window)</li>
                         <li><img src="image/check-ill.png" alt="">Tar Remover</li>
@@ -59,7 +59,8 @@
                         <h6>Rp70.000</h6>
                     </div>
                     <div class="select-price">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="professional"
+                            value="professional">
                     </div>
                 </div>
             </div>
@@ -96,6 +97,13 @@
             </div>
 
         </div>
+
+
+        {{-- Modal Order --}}
+        <div class="order-menu mt-5">
+            <button class="btn-reset">Reset</button>
+            <button class="btn-next">Lanjutkan</button>
+        </div>
     </div>
 
     <script>
@@ -106,6 +114,29 @@
             if (type) {
                 document.getElementById(type).style.display = 'block';
             }
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('input[name="flexRadioDefault"]').change(function() {
+                if ($('input[name="flexRadioDefault"]:checked').length > 0) {
+                    $('.order-menu').addClass('visible');
+                }
+            });
+
+            $('.btn-reset').click(function() {
+                $('input[name="flexRadioDefault"]').prop('checked', false);
+                $('.order-menu').removeClass('visible');
+            });
+
+            $('.btn-next').click(function() {
+                var selectedValue = $('input[name="flexRadioDefault"]:checked').val();
+                if (selectedValue) {
+                    alert('You selected: ' + selectedValue);
+                    // Here you can also handle form submission or redirect
+                }
+            });
         });
     </script>
 @endsection
