@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Home - iWash')
+@section('title', 'iWash | Login')
 
 @section('content')
     <link rel="stylesheet" href="{{ asset('css/auth.css') }}">
@@ -13,7 +13,8 @@
                 <h2 class="mt-5">Masuk Dengan Akun Anda</h2>
                 <div class="form-input mt-3 mb-5">
                     <label for="email">Email<span>*</span></label>
-                    <input type="email" id="email" name="email" placeholder="mail@domain.com" required>
+                    <input type="email" id="email" name="email" value="{{ old('email') }}"
+                        placeholder="mail@domain.com" required>
                     <label for="password">Password<span>*</span></label>
                     <input type="password" id="password" name="password" placeholder="Silahkan isi password akun Anda"
                         required>
@@ -25,8 +26,7 @@
                 <div class="btn-confirm mt-4">
                     <button type="button" class="btn-back"
                         onclick="window.location.href='{{ route('home') }}'">Kembali</button>
-                    <button type="submit" class="btn-submit"
-                        onclick="window.location.href='{{ route('login') }}'">Login</button>
+                    <button type="submit" class="btn-submit">Login</button>
                 </div>
             </form>
         </div>

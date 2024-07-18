@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class AuthController extends Controller
 {
@@ -19,13 +20,40 @@ class AuthController extends Controller
 
     public function login(Request $request)
     {
-        // Logic untuk login
-        dd($request->all());
+        $request->validate([
+            'email' => 'required',
+            'password' => 'required'
+        ], [
+            'email.required' => 'Alamat email perlu diisi.',
+            'password.required' => 'Password perlu diisi.'
+        ]);
+
+        $credentials = $request->only('email', 'password');
+
+        if (Auth::attempt($credentials)) {
+            if (Auth::user()->role == 'admin') {
+                return redirect()->route('admin.home');
+            } else {
+                return redirect()->route('home');
+            }
+        }
+
+        return redirect()->back()->withErrors([
+            'email' => 'Email dan Password yang dimasukan tidak sesuai'
+        ])->withInput();
     }
 
     public function register(Request $request)
     {
-        // Logic untuk register
-        dd($request->all());
+        // Implementasi logika untuk registrasi pengguna
+    }
+
+    public function logout(Request $request)
+    {
+        Auth::logout();
+        $request->session()->invalidate();
+        $request->session()->regenerateToken();
+
+        return redirect('home.home');
     }
 }

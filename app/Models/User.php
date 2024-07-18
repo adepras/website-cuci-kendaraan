@@ -18,8 +18,15 @@ class User extends Authenticatable
      */
     protected $fillable = [
         'name',
+        'phone_number',
         'email',
+        'address',
         'password',
+        'gender',
+        'role',
+        'vehicle_brand',
+        'vehicle_type',
+        'license_plate'
     ];
 
     /**
@@ -44,4 +51,10 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+
+    public function getGenderTextAttribute()
+    {
+        return $this->attributes['gender'] === 'male' ? 'Laki-laki' : 'Perempuan';
+    }
+
 }

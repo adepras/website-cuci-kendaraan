@@ -1,3 +1,4 @@
+<!-- resources/views/header.blade.php -->
 <link rel="stylesheet" href="{{ asset('css/header.css') }}">
 
 <header>
@@ -27,8 +28,18 @@
                     </li>
                 </ul>
                 <div class="d-flex nav-button">
-                    <button class="nav-login" onclick="window.location.href='{{ route('login') }}'">Login</button>
-                    <button class="nav-register" onclick="window.location.href='{{ route('register') }}'">Daftar</button>
+                    @auth
+                        <button class="nav-login" onclick="window.location.href='{{ route('profile') }}'">Profile</button>
+                        <button class="nav-register"
+                            onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</button>
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                            @csrf
+                        </form>
+                    @else
+                        <button class="nav-login" onclick="window.location.href='{{ route('login') }}'">Login</button>
+                        <button class="nav-register"
+                            onclick="window.location.href='{{ route('register') }}'">Daftar</button>
+                    @endauth
                 </div>
             </div>
         </div>

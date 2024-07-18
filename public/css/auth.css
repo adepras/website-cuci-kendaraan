@@ -65,13 +65,29 @@
     flex-direction: column;
 }
 
+.form-radio {
+    display: flex;
+    gap: 20px;
+}
+
+.form-radio input[type="radio"] {
+    margin: 10px;
+    cursor: pointer;
+}
+
+.form-radio label {
+    user-select: none;
+}
+
 /* Button Submit */
 .btn-confirm {
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
+    gap: 30px;
 }
 
-.btn-submit, .btn-back {
+.btn-submit,
+.btn-back {
     font-size: 16px;
     font-weight: 500;
     border-radius: 8px;
@@ -95,7 +111,6 @@
 .show-password {
     display: flex;
     align-items: center;
-    cursor: pointer;
 }
 
 .show-password input[type="checkbox"] {

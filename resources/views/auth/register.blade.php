@@ -24,11 +24,26 @@
                             <input type="email" id="email" name="email" placeholder="mail@domain.com" required>
                         </div>
                     </div>
-                    <label for="password">Password<span>*</span></label>
-                    <input type="password" id="password" name="password" placeholder="Buat password akun Anda" required>
-                    <div class="show-password">
-                        <input type="checkbox" id="show-password" onclick="togglePassword()">
-                        <label for="show-password">Tampilkan password</label>
+                    <div class="form-row">
+                        <div class="form-col">
+                            <label for="password">Password<span>*</span></label>
+                            <input type="password" id="password" name="password" placeholder="Buat password akun Anda"
+                                required>
+                            <div class="show-password">
+                                <input type="checkbox" id="show-password" onclick="togglePassword()">
+                                <label for="show-password">Tampilkan password</label>
+                            </div>
+                        </div>
+                        <div class="form-col">
+                            <label>Jenis Kelamin<span>*</span></label>
+                            <div class="form-radio">
+                                <input type="radio" id="gender_male" name="gender" value="male" required>
+                                <label for="gender_male">Laki-laki</label>
+
+                                <input type="radio" id="gender_female" name="gender" value="female" required>
+                                <label for="gender_female">Perempuan</label>
+                            </div>
+                        </div>
                     </div>
                     <label for="address">Alamat Lengkap<span>*</span></label>
                     <input type="text" id="address" name="address" placeholder="Tuliskan dengan lengkap dan benar"
@@ -55,8 +70,7 @@
                 <div class="btn-confirm mt-4">
                     <button type="button" class="btn-back"
                         onclick="window.location.href='{{ route('home') }}'">Kembali</button>
-                    <button type="submit" class="btn-submit"
-                        onclick="window.location.href='{{ route('register') }}'">Daftar</button>
+                    <button type="submit" class="btn-submit">Daftar</button>
                 </div>
             </form>
         </div>
