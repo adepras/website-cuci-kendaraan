@@ -17,6 +17,10 @@
                     <label for="password">Password<span>*</span></label>
                     <input type="password" id="password" name="password" placeholder="Silahkan isi password akun Anda"
                         required>
+                    <div class="show-password">
+                        <input type="checkbox" id="show-password" onclick="togglePassword()">
+                        <label for="show-password">Tampilkan password</label>
+                    </div>
                 </div>
                 <div class="btn-confirm mt-4">
                     <button type="button" class="btn-back"
@@ -27,4 +31,22 @@
             </form>
         </div>
     </div>
+
+    <script>
+        function togglePassword() {
+            var passwordField = document.getElementById("password");
+            var showPasswordCheckbox = document.getElementById("show-password");
+            if (showPasswordCheckbox.checked) {
+                passwordField.type = "text";
+            } else {
+                passwordField.type = "password";
+            }
+        }
+
+        // Mencegah label bisa diklik
+        var showPasswordLabel = document.querySelector('label[for="show-password"]');
+        showPasswordLabel.addEventListener('click', function(event) {
+            event.preventDefault();
+        });
+    </script>
 @endsection

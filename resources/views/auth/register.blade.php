@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Home - iWash')
+@section('title', 'iWash | Daftar')
 
 @section('content')
     <link rel="stylesheet" href="{{ asset('css/auth.css') }}">
@@ -26,6 +26,10 @@
                     </div>
                     <label for="password">Password<span>*</span></label>
                     <input type="password" id="password" name="password" placeholder="Buat password akun Anda" required>
+                    <div class="show-password">
+                        <input type="checkbox" id="show-password" onclick="togglePassword()">
+                        <label for="show-password">Tampilkan password</label>
+                    </div>
                     <label for="address">Alamat Lengkap<span>*</span></label>
                     <input type="text" id="address" name="address" placeholder="Tuliskan dengan lengkap dan benar"
                         required>
@@ -49,10 +53,30 @@
                     </div>
                 </div>
                 <div class="btn-confirm mt-4">
-                    <button type="button" class="btn-back" onclick="window.location.href='{{ route('home') }}'">Kembali</button>
-                    <button type="submit" class="btn-submit" onclick="window.location.href='{{ route('register') }}'">Daftar</button>
+                    <button type="button" class="btn-back"
+                        onclick="window.location.href='{{ route('home') }}'">Kembali</button>
+                    <button type="submit" class="btn-submit"
+                        onclick="window.location.href='{{ route('register') }}'">Daftar</button>
                 </div>
             </form>
         </div>
     </div>
+
+    <script>
+        function togglePassword() {
+            var passwordField = document.getElementById("password");
+            var showPasswordCheckbox = document.getElementById("show-password");
+            if (showPasswordCheckbox.checked) {
+                passwordField.type = "text";
+            } else {
+                passwordField.type = "password";
+            }
+        }
+
+        // Mencegah label bisa diklik
+        var showPasswordLabel = document.querySelector('label[for="show-password"]');
+        showPasswordLabel.addEventListener('click', function(event) {
+            event.preventDefault();
+        });
+    </script>
 @endsection

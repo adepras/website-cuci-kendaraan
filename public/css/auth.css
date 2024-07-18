@@ -90,3 +90,21 @@
     border: 1px solid #f9f9f9;
     color: #333;
 }
+
+/* Tampilkan Password */
+.show-password {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.show-password input[type="checkbox"] {
+    margin: 10px;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.show-password label {
+    user-select: none;
+}
