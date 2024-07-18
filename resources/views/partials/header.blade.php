@@ -27,8 +27,8 @@
                     </li>
                 </ul>
                 <div class="d-flex nav-button">
-                    <button class="nav-login">Login</button>
-                    <button class="nav-register">Daftar</button>
+                    <button class="nav-login" onclick="window.location.href='{{ route('login') }}'">Login</button>
+                    <button class="nav-register" onclick="window.location.href='{{ route('register') }}'">Daftar</button>
                 </div>
             </div>
         </div>
