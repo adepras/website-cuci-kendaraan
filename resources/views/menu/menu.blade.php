@@ -20,9 +20,11 @@
     </div>
 
     <script>
+        var isLoggedIn = @json(Auth::check());
+
         function checkLogin(event) {
             event.preventDefault();
-            @if (!Auth::check())
+            if (!isLoggedIn) {
                 Swal.fire({
                     title: 'Error!',
                     text: 'Silahkan Login atau Daftar terlebih dahulu.',
@@ -33,9 +35,10 @@
                         window.location.href = "{{ route('menu') }}";
                     }
                 });
-            @else
+            } else {
                 window.location.href = event.target.href;
-            @endif
+            }
         }
     </script>
+
 @endsection

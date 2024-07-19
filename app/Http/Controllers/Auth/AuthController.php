@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Log;
 
 class AuthController extends Controller
 {
@@ -32,7 +33,7 @@ class AuthController extends Controller
 
         if (Auth::attempt($credentials)) {
             if (Auth::user()->role == 'admin') {
-                return redirect()->route('admin.home');
+                return redirect()->route('dashboard');
             } else {
                 return redirect()->route('home');
             }
@@ -45,7 +46,7 @@ class AuthController extends Controller
 
     public function register(Request $request)
     {
-        // Implementasi logika untuk registrasi pengguna
+        dd($request->all());
     }
 
     public function logout(Request $request)
@@ -54,6 +55,6 @@ class AuthController extends Controller
         $request->session()->invalidate();
         $request->session()->regenerateToken();
 
-        return redirect('home.home');
+        return redirect('/');
     }
 }

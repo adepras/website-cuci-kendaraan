@@ -27,16 +27,16 @@ class UserSeeder extends Seeder
                 'license_plate' => 'D 3 PRAS'
             ],
             [
-                'name' => 'Suparyanto',
+                'name' => 'Azyumi Azra',
                 'phone_number' => '081212341234',
                 'email' => 'admin1@gmail.com',
-                'address' => 'Desa Wirun, Kec.Kutoarjo, Kab.Purworejo',
+                'address' => 'Kab.Kudus',
                 'password' => bcrypt('123456'),
-                'gender' => 'male',
+                'gender' => 'female',
                 'role' => 'admin',
                 'vehicle_brand' => 'Suzuki',
-                'vehicle_type' => 'APV',
-                'license_plate' => 'AA 1 WW'
+                'vehicle_type' => 'Ertiga',
+                'license_plate' => 'K 111 M'
             ],
             // [
             //     'name' => '',
