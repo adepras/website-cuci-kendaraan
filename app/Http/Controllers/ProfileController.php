@@ -14,10 +14,3 @@ class ProfileController extends Controller
         return view('profile.show', compact('user'));
     }
 }
-    // public function show()
-    // {
-    //     if (Auth::user()->role == 'admin') {
-    //         return view('admin.index');
-    //     }
-    //     return view('profile.show');
-    // }

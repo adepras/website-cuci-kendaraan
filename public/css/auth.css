@@ -123,3 +123,9 @@
 .show-password label {
     user-select: none;
 }
+
+.error-message {
+    font-size: 12px;
+    color: red;
+    display: none;
+}

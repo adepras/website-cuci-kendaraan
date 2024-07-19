@@ -2,10 +2,13 @@
 
 namespace App\Http\Controllers\Auth;
 
-use App\Http\Controllers\Controller;
+use App\Models\User;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Log;
+use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Validator;
 
 class AuthController extends Controller
 {
@@ -21,32 +24,65 @@ class AuthController extends Controller
 
     public function login(Request $request)
     {
-        $request->validate([
-            'email' => 'required',
-            'password' => 'required'
+        $validator = Validator::make($request->all(), [
+            'email' => 'required|email',
+            'password' => 'required|min:8'
         ], [
-            'email.required' => 'Alamat email perlu diisi.',
-            'password.required' => 'Password perlu diisi.'
+            'email.required' => 'Email belum diisi!',
+            'email.email' => 'Format email tidak valid!',
+            'password.required' => 'Password belum diisi!',
+            'password.min' => 'Password minimal 8 karakter!'
         ]);
+
+        if ($validator->fails()) {
+            return redirect()->back()
+                ->withErrors($validator)
+                ->withInput();
+        }
 
         $credentials = $request->only('email', 'password');
 
         if (Auth::attempt($credentials)) {
+            // Menentukan role untuk redirect
             if (Auth::user()->role == 'admin') {
                 return redirect()->route('dashboard');
             } else {
-                return redirect()->route('home');
+                return redirect()->route('home')->with('success', 'Login berhasil!');
             }
         }
 
-        return redirect()->back()->withErrors([
-            'email' => 'Email dan Password yang dimasukan tidak sesuai'
-        ])->withInput();
+        // login gagal
+        return redirect()->back()
+            ->withErrors(['email' => 'Email atau Password yang Anda masukkan salah!'])
+            ->withInput();
     }
 
     public function register(Request $request)
     {
-        dd($request->all());
+        $validator = Validator::make($request->all(), [
+            'name' => 'required|string|max:255',
+            'phone_number' => 'required|string|max:15',
+            'email' => 'required|string|email|max:255|unique:users',
+            'password' => 'required|string|min:8|confirmed',
+            'gender' => 'required|string|in:male,female',
+            'address' => 'required|string|max:255',
+            'vehicle_brand' => 'required|string|max:255',
+            'vehicle_type' => 'required|string|max:255',
+            'license_plate' => 'required|string|max:10',
+        ]);
+
+        if ($validator->fails()) {
+            return redirect()->back()
+                ->withErrors($validator)
+                ->withInput();
+        }
+
+        $validatedData = $validator->validated();
+        $validatedData['password'] = Hash::make($validatedData['password']);
+
+        User::create($validatedData);
+
+        return redirect()->route('home')->with('success', 'Akun iWash Anda Berhasil Dibuat!');
     }
 
     public function logout(Request $request)

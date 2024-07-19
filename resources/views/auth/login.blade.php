@@ -8,13 +8,16 @@
     <div class="container-login py-5">
         <div class="container-form">
             <h1>Masuk layanan iWash</h1>
-            <form action="{{ route('login') }}" method="POST">
+            <form id="login-form" action="{{ route('login') }}" method="POST">
                 @csrf
                 <h2 class="mt-5">Masuk Dengan Akun Anda</h2>
                 <div class="form-input mt-3 mb-5">
+                    {{-- Email --}}
                     <label for="email">Email<span>*</span></label>
-                    <input type="email" id="email" name="email" value="{{ old('email') }}"
-                        placeholder="mail@domain.com" required>
+                    <input type="email" id="email" name="email" placeholder="mail@domain.com"
+                        value="{{ old('email') }}" required>
+                    <div class="error-message" id="email-error"></div>
+                    {{-- Password --}}
                     <label for="password">Password<span>*</span></label>
                     <input type="password" id="password" name="password" placeholder="Silahkan isi password akun Anda"
                         required>
@@ -22,6 +25,7 @@
                         <input type="checkbox" id="show-password" onclick="togglePassword()">
                         <label for="show-password">Tampilkan password</label>
                     </div>
+                    <div class="error-message" id="password-error"></div>
                 </div>
                 <div class="btn-confirm mt-4">
                     <button type="button" class="btn-back"
@@ -48,5 +52,51 @@
         showPasswordLabel.addEventListener('click', function(event) {
             event.preventDefault();
         });
+
+        // Validasi inputan.
+        var emailField = document.getElementById('email');
+        var passwordField = document.getElementById('password');
+        var emailError = document.getElementById('email-error');
+        var passwordError = document.getElementById('password-error');
+
+        function validateField(field, errorField, errorMessage) {
+            if (field.value.trim() === '') {
+                errorField.textContent = errorMessage;
+                errorField.style.display = 'block';
+            } else {
+                errorField.style.display = 'none';
+            }
+        }
+
+        function validatePasswordLength() {
+            if (passwordField.value.length < 8) {
+                passwordError.textContent = 'Password minimal 8 karakter!';
+                passwordError.style.display = 'block';
+            } else {
+                passwordError.style.display = 'none';
+            }
+        }
+
+        emailField.addEventListener('input', function() {
+            validateField(emailField, emailError, 'Email belum diisi!');
+        });
+
+        passwordField.addEventListener('input', validatePasswordLength);
+
+        document.getElementById('login-form').addEventListener('submit', function(event) {
+            validateField(emailField, emailError, 'Email belum diisi!');
+            validatePasswordLength();
+        });
+
+        // SweetAlert pada error login
+        @if ($errors->any())
+            Swal.fire({
+                icon: 'error',
+                title: 'Gagal!',
+                text: '{{ $errors->first() }}',
+                timer: 2000,
+                showConfirmButton: false
+            });
+        @endif
     </script>
 @endsection

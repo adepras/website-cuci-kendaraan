@@ -22,6 +22,7 @@ return new class extends Migration {
             $table->string('vehicle_brand');
             $table->string('vehicle_type');
             $table->string('license_plate');
+            $table->rememberToken();
             $table->timestamps();
         });
     }
