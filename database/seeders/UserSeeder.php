@@ -19,24 +19,28 @@ class UserSeeder extends Seeder
                 'phone_number' => '081212341234',
                 'email' => 'user1@gmail.com',
                 'address' => 'Kec.Kutoarjo, Kab.Purworejo',
-                'password' => bcrypt('12345'),
+                'password' => bcrypt('12345678'),
                 'gender' => 'male',
-                'role' => 'user',
-                'vehicle_brand' => 'Toyota',
-                'vehicle_type' => 'GR Corolla',
-                'license_plate' => 'D 3 PRAS'
+                'role' => 'user'
             ],
             [
                 'name' => 'Azyumi Azra',
                 'phone_number' => '081212341234',
                 'email' => 'admin1@gmail.com',
                 'address' => 'Kab.Kudus',
-                'password' => bcrypt('123456'),
+                'password' => bcrypt('123456789'),
                 'gender' => 'female',
-                'role' => 'admin',
-                'vehicle_brand' => 'Suzuki',
-                'vehicle_type' => 'Ertiga',
-                'license_plate' => 'K 111 M'
+                'role' => 'admin'
+            ],
+            // Admin semisal mau beneran di pakai.
+            [
+                'name' => 'Admin Iwash',
+                'phone_number' => '081219999204',
+                'email' => 'iwashadmin@gmail.com',
+                'address' => 'Desa Wirun, Kec.Kutoarjo, Kab.Purworejo, Jawa Tengah',
+                'password' => bcrypt('adminiwash1234'),
+                'gender' => 'male',
+                'role' => 'admin'
             ],
             // [
             //     'name' => '',
@@ -45,10 +49,7 @@ class UserSeeder extends Seeder
             //     'address' => '',
             //     'password' => bcrypt(''),
             //     'gender' => '',
-            //     'role' => '',
-            //     'vehicle_brand' => '',
-            //     'vehicle_type' => '',
-            //     'license_plate' => ''
+            //     'role' => ''
             // ],
         ];
         foreach($userData as $key => $val){

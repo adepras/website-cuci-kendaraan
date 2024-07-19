@@ -8,6 +8,17 @@
     <div class="container-login py-5">
         <div class="container-form">
             <h1>Masuk layanan iWash</h1>
+            @if (session('status'))
+                <script>
+                    Swal.fire({
+                        icon: 'success',
+                        title: 'Password Berhasil Diubah',
+                        text: '',
+                        timer: 2500,
+                        showConfirmButton: false
+                    });
+                </script>
+            @endif
             <form id="login-form" action="{{ route('login') }}" method="POST">
                 @csrf
                 <h2 class="mt-5">Masuk Dengan Akun Anda</h2>
@@ -21,21 +32,30 @@
                     <label for="password">Password<span>*</span></label>
                     <input type="password" id="password" name="password" placeholder="Silahkan isi password akun Anda"
                         required>
-                    <div class="show-password">
-                        <input type="checkbox" id="show-password" onclick="togglePassword()">
-                        <label for="show-password">Tampilkan password</label>
+                    <div class="form-row">
+                        <div class="form-col">
+                            <div class="show-password">
+                                <input type="checkbox" id="show-password" onclick="togglePassword()">
+                                <label for="show-password">Tampilkan Password</label>
+                            </div>
+                            <div class="error-message" id="password-error"></div>
+                        </div>
+                        <div class="form-col">
+                            {{-- Lupa Password --}}
+                            <a class="forgot-password" href="{{ route('password.request') }}">Lupa Passwod?</a>
+                        </div>
                     </div>
-                    <div class="error-message" id="password-error"></div>
-                </div>
-                <div class="btn-confirm mt-4">
-                    <button type="button" class="btn-back"
-                        onclick="window.location.href='{{ route('home') }}'">Kembali</button>
-                    <button type="submit" class="btn-submit">Login</button>
+                    <div class="btn-confirm mt-4">
+                        <button type="button" class="btn-back"
+                            onclick="window.location.href='{{ route('home') }}'">Kembali</button>
+                        <button type="submit" class="btn-submit">Login</button>
+                    </div>
                 </div>
             </form>
         </div>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
         function togglePassword() {
             var passwordField = document.getElementById("password");
@@ -92,9 +112,9 @@
         @if ($errors->any())
             Swal.fire({
                 icon: 'error',
-                title: 'Gagal!',
+                title: 'Login Gagal!',
                 text: '{{ $errors->first() }}',
-                timer: 2000,
+                timer: 2500,
                 showConfirmButton: false
             });
         @endif

@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'iWash - Paket Super')
+@section('title', 'iWash | Paket Super')
 
 @section('content')
     <link rel="stylesheet" href="{{ asset('css/menu.css') }}">

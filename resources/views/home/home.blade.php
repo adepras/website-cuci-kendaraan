@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Home - iWash')
+@section('title', 'iWash | Home')
 
 @section('content')
     <link rel="stylesheet" href="{{ asset('css/home.css') }}">
@@ -105,9 +105,9 @@
         @if (session('success'))
             Swal.fire({
                 icon: 'success',
-                title: 'Berhasil!',
+                title: 'Login Berhasil!',
                 text: '{{ session('success') }}',
-                timer: 1000,
+                timer: 2500,
                 showConfirmButton: false
             });
         @endif

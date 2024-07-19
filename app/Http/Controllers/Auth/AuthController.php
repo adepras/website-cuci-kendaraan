@@ -66,9 +66,6 @@ class AuthController extends Controller
             'password' => 'required|string|min:8|confirmed',
             'gender' => 'required|string|in:male,female',
             'address' => 'required|string|max:255',
-            'vehicle_brand' => 'required|string|max:255',
-            'vehicle_type' => 'required|string|max:255',
-            'license_plate' => 'required|string|max:10',
         ]);
 
         if ($validator->fails()) {

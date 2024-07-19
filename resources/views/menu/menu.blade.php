@@ -1,7 +1,7 @@
 <!-- resources/views/menu.blade.php -->
 @extends('layouts.app')
 
-@section('title', 'iWash - Menu Layanan')
+@section('title', 'iWash | Menu Layanan')
 
 @section('content')
     <link rel="stylesheet" href="{{ asset('css/menu.css') }}">

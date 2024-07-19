@@ -19,9 +19,6 @@ return new class extends Migration {
             $table->string('password');
             $table->enum('gender', ['male','female'])->nullable();
             $table->enum('role', ['user', 'admin'])->default('user');
-            $table->string('vehicle_brand');
-            $table->string('vehicle_type');
-            $table->string('license_plate');
             $table->rememberToken();
             $table->timestamps();
         });
