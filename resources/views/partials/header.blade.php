@@ -19,9 +19,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('price') }}">Harga</a>
                     </li>
-                    <li class="nav-item">
+                    {{-- <li class="nav-item">
                         <a class="nav-link" href="#">Paket Super</a>
-                    </li>
+                    </li> --}}
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('about') }}">Tentang Kami</a>
                     </li>
