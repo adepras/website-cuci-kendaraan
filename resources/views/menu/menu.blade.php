@@ -26,7 +26,7 @@
             event.preventDefault();
             if (!isLoggedIn) {
                 Swal.fire({
-                    title: 'Error!',
+                    title: 'Ooops!',
                     text: 'Silahkan Login atau Daftar terlebih dahulu.',
                     icon: 'error',
                     confirmButtonText: 'OK'

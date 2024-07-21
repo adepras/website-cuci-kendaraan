@@ -3,9 +3,9 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\MenuController;
-use App\Http\Controllers\TestController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\VehicleController;
 use App\Http\Controllers\Auth\AuthController;
 use App\Http\Controllers\ResetPasswordController;
 use App\Http\Controllers\ForgotPasswordController;
@@ -34,7 +34,10 @@ Route::get('/tentang_kami', [HomeController::class, 'about'])->name('about');
 
 Route::middleware(['auth'])->group(function () {
     // Profile dan Logout untuk User
-    Route::get('/profile', [ProfileController::class, 'show'])->name('profile');
+    Route::get('/profile', [ProfileController::class, 'profile'])->name('profile');
+    Route::post('/profile/update', [ProfileController::class, 'update'])->name('profile.update');
+    Route::post('/vehicles', [VehicleController::class, 'store'])->name('vehicles.store');
+    Route::delete('/vehicles/{id}', [VehicleController::class, 'destroy'])->name('vehicles.destroy');
     Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 
     // Menu Layanan Cuci Mobil
