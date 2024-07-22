@@ -45,6 +45,10 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/salon_mobil', [MenuController::class, 'menu2'])->name('menu2');
     Route::get('/paket_super', [MenuController::class, 'menu3'])->name('menu3');
 
+    // Menu Satu Kali Cuci
+    Route::get('/menu-first', [MenuController::class, 'showWashPage'])->name('menu1');
+
+
 });
 
 

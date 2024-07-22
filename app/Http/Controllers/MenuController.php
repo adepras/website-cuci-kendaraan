@@ -26,4 +26,13 @@ class MenuController extends Controller
     {
         return view('menu.menu_third');
     }
+
+
+    public function showWashPage()
+    {
+        $vehicles = auth()->user()->vehicles;
+
+        return view('menu.menu_first', compact('vehicles'));
+    }
+
 }

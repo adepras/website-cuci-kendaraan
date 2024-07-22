@@ -28,6 +28,11 @@ class User extends Authenticatable
         'role',
     ];
 
+    public function vehicles()
+    {
+        return $this->hasMany(Vehicle::class);
+    }
+
     /**
      * The attributes that should be hidden for serialization.
      *
