@@ -5,7 +5,7 @@
 @section('content')
     <link rel="stylesheet" href="{{ asset('css/auth.css') }}">
 
-    <div class="container-forgot">
+    <div class="container-privacy">
         
     </div>
 @endsection

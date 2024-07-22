@@ -40,12 +40,16 @@ class AuthController extends Controller
                 ->withInput();
         }
 
-        $credentials = $request->only('email', 'password');
+        // $credentials = $request->only('email', 'password');
+
+        $credentials = [
+            'email' => $request->email,
+            'password' =>$request->password,
+        ];
 
         if (Auth::attempt($credentials)) {
-            // Menentukan role untuk redirect
             if (Auth::user()->role == 'admin') {
-                return redirect()->route('dashboard');
+                return redirect()->route('admin');
             } else {
                 return redirect()->route('home')->with('success', 'Login berhasil!');
             }

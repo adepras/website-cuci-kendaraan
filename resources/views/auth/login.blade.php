@@ -67,7 +67,6 @@
             }
         }
 
-        // Mencegah label bisa diklik
         var showPasswordLabel = document.querySelector('label[for="show-password"]');
         showPasswordLabel.addEventListener('click', function(event) {
             event.preventDefault();
@@ -108,7 +107,6 @@
             validatePasswordLength();
         });
 
-        // SweetAlert pada error login
         @if ($errors->any())
             Swal.fire({
                 icon: 'error',

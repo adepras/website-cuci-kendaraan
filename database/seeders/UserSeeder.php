@@ -19,7 +19,7 @@ class UserSeeder extends Seeder
                 'phone_number' => '081212341234',
                 'email' => 'user1@gmail.com',
                 'address' => 'Kec.Kutoarjo, Kab.Purworejo',
-                'password' => bcrypt('12345678'),
+                'password' => bcrypt('akunuser1'),
                 'gender' => 'male',
                 'role' => 'user'
             ],
@@ -28,20 +28,19 @@ class UserSeeder extends Seeder
                 'phone_number' => '081212341234',
                 'email' => 'admin1@gmail.com',
                 'address' => 'Kab.Kudus',
-                'password' => bcrypt('123456789'),
+                'password' => bcrypt('akunadmin1'),
                 'gender' => 'female',
                 'role' => 'admin'
             ],
-            // Admin semisal mau beneran di pakai.
-            [
-                'name' => 'Admin Iwash',
-                'phone_number' => '081219999204',
-                'email' => 'iwashadmin@gmail.com',
-                'address' => 'Desa Wirun, Kec.Kutoarjo, Kab.Purworejo, Jawa Tengah',
-                'password' => bcrypt('adminiwash1234'),
-                'gender' => 'male',
-                'role' => 'admin'
-            ],
+            // [
+            //     'name' => 'Admin Iwash',
+            //     'phone_number' => '081219999204',
+            //     'email' => 'iwashadmin@gmail.com',
+            //     'address' => 'Desa Wirun, Kec.Kutoarjo, Kab.Purworejo, Jawa Tengah',
+            //     'password' => bcrypt('adminiwash1234'),
+            //     'gender' => 'male',
+            //     'role' => 'admin'
+            // ],
             // [
             //     'name' => '',
             //     'phone_number' => '',
