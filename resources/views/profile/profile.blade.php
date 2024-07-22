@@ -8,7 +8,8 @@
     <div class="container-profile py-5">
         <div class="profile-title">
             <h2>Selamat Datang, {{ $user->name }}</h2>
-            <img id="profile-image" src="{{ $user->gender === 'female' ? 'image/female-ill.png' : 'image/male-ill.png' }}"
+            <img id="profile-image"
+                src="{{ $user->gender === 'female' ? asset('image/female-ill.png') : asset('image/male-ill.png') }}"
                 alt="">
         </div>
         <div class="profile-data">
