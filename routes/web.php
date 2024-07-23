@@ -26,10 +26,10 @@ Route::post('reset-password', [ResetPasswordController::class, 'reset'])->name('
 
 // Halaman Home
 Route::get('/', [HomeController::class, 'index'])->name('home');
-Route::get('/menu_layanan', [MenuController::class, 'menu'])->name('menu');
+Route::get('/menu-layanan', [MenuController::class, 'menu'])->name('menu');
 Route::get('/detailing', [HomeController::class, 'pack'])->name('pack');
 Route::get('/harga', [HomeController::class, 'price'])->name('price');
-Route::get('/tentang_kami', [HomeController::class, 'about'])->name('about');
+Route::get('/tentang-kami', [HomeController::class, 'about'])->name('about');
 
 
 Route::middleware(['auth'])->group(function () {
@@ -41,9 +41,9 @@ Route::middleware(['auth'])->group(function () {
     Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 
     // Menu Layanan Cuci Mobil
-    Route::get('/satu_kali_cuci', [MenuController::class, 'menu1'])->name('menu1');
-    Route::get('/salon_mobil', [MenuController::class, 'menu2'])->name('menu2');
-    Route::get('/paket_super', [MenuController::class, 'menu3'])->name('menu3');
+    Route::get('/satu-kali-cuci', [MenuController::class, 'menu1'])->name('menu1');
+    Route::get('/salon-mobil', [MenuController::class, 'menu2'])->name('menu2');
+    Route::get('/paket-super', [MenuController::class, 'menu3'])->name('menu3');
 
     // Menu Satu Kali Cuci
     Route::get('/menu-first', [MenuController::class, 'showWashPage'])->name('menu1');
@@ -56,5 +56,9 @@ Route::middleware(['auth'])->group(function () {
 Route::get('/admin', [AdminController::class, 'admin'])->name('admin');
 
 Route::middleware(['auth', 'admin'])->group(function () {
-
+    Route::get('/admin-profile', [AdminController::class, 'adminprofile'])->name('admin.adminprofile');
+    Route::get('/dashboard', [AdminController::class, 'dashboard'])->name('admin.dashboard');
+    Route::get('/users', [AdminController::class, 'users'])->name('admin.users');
+    Route::get('/booking', [AdminController::class, 'booking'])->name('admin.booking');
+    Route::get('/queue', [AdminController::class, 'queue'])->name('admin.queue');
 });

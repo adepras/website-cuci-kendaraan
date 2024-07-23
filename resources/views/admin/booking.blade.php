@@ -1,11 +1,11 @@
 @extends('admin.admin-app')
 
-@section('title', 'Admin | Dashboard')
+@section('title', 'Admin | Pesanan')
 
 @section('content')
     <link rel="stylesheet" href="{{ asset('css/admin.css') }}">
 
-    <div class="dashboard-container">
-        <h1>Dashboard</h1>
+    <div class="booking-container">
+        <h1>Booking</h1>
     </div>
 @endsection
