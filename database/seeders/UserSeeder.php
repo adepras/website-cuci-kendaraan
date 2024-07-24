@@ -18,8 +18,8 @@ class UserSeeder extends Seeder
                 'name' => 'Ade Prasetyo',
                 'phone_number' => '081212341234',
                 'email' => 'user1@gmail.com',
-                'address' => 'Kec.Kutoarjo, Kab.Purworejo',
                 'password' => bcrypt('akunuser1'),
+                'address' => 'Kab.Purworejo',
                 'gender' => 'male',
                 'role' => 'user'
             ],
@@ -27,8 +27,8 @@ class UserSeeder extends Seeder
                 'name' => 'Azyumi Azra',
                 'phone_number' => '081212341234',
                 'email' => 'admin1@gmail.com',
-                'address' => 'Kab.Kudus',
                 'password' => bcrypt('akunadmin1'),
+                'address' => 'Kab.Kudus',
                 'gender' => 'female',
                 'role' => 'admin'
             ],

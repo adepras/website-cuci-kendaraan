@@ -19,25 +19,33 @@ class ProfileController extends Controller
     public function update(Request $request)
     {
         $user = Auth::user();
-
-        // Validasi data
-        $request->validate([
+    
+        // Validate data
+        $validatedData = $request->validate([
             'name' => 'required|string|max:255',
             'email' => 'required|string|email|max:255|unique:users,email,' . $user->id,
             'phone_number' => 'required|string|max:15',
             'gender' => 'required|string|in:male,female',
             'address' => 'required|string|max:255',
         ]);
+    
+        // Update user data
+        $user->name = $validatedData['name'];
+        $user->email = $validatedData['email'];
+        $user->phone_number = $validatedData['phone_number'];
+        $user->gender = $validatedData['gender'];
+        $user->address = $validatedData['address'];
+        $user->save();
+    
+        // Redirect back to the profile page with a success message
+        return redirect()->route('profile')->with('success', 'Profil berhasil diperbarui');
+    }
+    
+    
 
-        // Perbarui data pengguna
-        $user->update([
-            'name' => $request->name,
-            'email' => $request->email,
-            'phone_number' => $request->phone_number,
-            'gender' => $request->gender,
-            'address' => $request->address,
-        ]);
-
-        return response()->json(['success' => true]);
+    public function edit_profile(Request $request)
+    {
+        $user = Auth::user();
+        return view('profile.edit_profile', compact('user'));
     }
 }

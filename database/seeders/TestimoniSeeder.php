@@ -14,7 +14,7 @@ class TestimoniSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('testimoni')->insert([
+        DB::table('testimonianls')->insert([
             ['nama' => 'Bambang', 'quote' => 'Layanan iWash sangat memuaskan!'],
             ['nama' => 'Yanto', 'quote' => 'Proses cepat dan hasil cucian bersih.']
         ]);

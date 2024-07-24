@@ -35,7 +35,8 @@ Route::get('/tentang-kami', [HomeController::class, 'about'])->name('about');
 Route::middleware(['auth'])->group(function () {
     // Profile dan Logout untuk User
     Route::get('/profile', [ProfileController::class, 'profile'])->name('profile');
-    Route::post('/profile/update', [ProfileController::class, 'update'])->name('profile.update');
+    Route::get('/profile/edit', [ProfileController::class, 'edit_profile'])->name('profile.edit');
+    Route::put('/profile/update', [ProfileController::class, 'update'])->name('profile.update');
     Route::post('/vehicles', [VehicleController::class, 'store'])->name('vehicles.store');
     Route::delete('/vehicles/{id}', [VehicleController::class, 'destroy'])->name('vehicles.destroy');
     Route::post('/logout', [AuthController::class, 'logout'])->name('logout');

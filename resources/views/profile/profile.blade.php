@@ -32,7 +32,8 @@
             <input type="text" id="address" name="address" value="{{ $user->address }}" disabled>
         </div>
         <div class="btn-tools mt-3 mb-3">
-            <button type="button" id="btn-edit-save" class="btn-edit">Edit</button>
+            <a href="{{ route('profile.edit') }}"><button  type="button" class="btn-edit">Edit</button></a>
+            
         </div>
         {{-- Data Kendaraan --}}
         <div class="vehicle-data">
@@ -91,7 +92,7 @@
         </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    {{-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
         $(document).ready(function() {
             $('#btn-edit-save').click(function() {
@@ -135,5 +136,5 @@
                 }
             });
         });
-    </script>
+    </script> --}}
 @endsection
