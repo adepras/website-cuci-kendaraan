@@ -13,11 +13,11 @@ return new class extends Migration {
         Schema::create('outlets', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->text('address')->nullable();
+            $table->text('address');
             $table->time('open_time');
             $table->time('close_time');
             $table->integer('capacity');
-            $table->text('facilities')->nullable();
+            $table->text('facilities');
             $table->timestamps();
         });
     }
