@@ -15,11 +15,11 @@ return new class extends Migration {
             $table->string('name');
             $table->string('phone_number');
             $table->string('email')->unique();
-            $table->text('address')->nullable();
             $table->string('password');
-            $table->enum('gender', ['male','female'])->nullable();
+            $table->text('address');
+            $table->enum('gender', ['male', 'female']);
             $table->enum('role', ['user', 'admin'])->default('user');
-            $table->rememberToken();
+            $table->string('remember_token')->nullable();
             $table->timestamps();
         });
     }
