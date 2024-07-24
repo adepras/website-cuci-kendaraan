@@ -10,10 +10,10 @@ return new class extends Migration {
      */
     public function up()
     {
-        Schema::create('packages', function (Blueprint $table) {
+       Schema::create('packages', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->text('description')->nullable();
+            $table->text('description');
             $table->integer('price');
             $table->timestamps();
         });
