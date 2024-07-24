@@ -9,10 +9,10 @@ class Testimoni extends Model
 {
     use HasFactory;
 
-    protected $table = 'testimoni';
+    protected $table = 'testimonials';
 
     protected $fillable = [
-        'nama',
+        'name',
         'quote',
     ];
 }
