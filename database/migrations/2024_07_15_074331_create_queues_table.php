@@ -12,9 +12,9 @@ return new class extends Migration {
     {
         Schema::create('queues', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('booking_id')->constrained('bookings')->onDelete('cascade');
+            $table->foreignId('booking_id')->constrained('bookings');
             $table->string('license_plate');
-            $table->foreignId('outlet_id')->constrained('outlets')->onDelete('cascade');
+            $table->foreignId('outlet_id')->constrained('outlets');
             $table->date('queue_date');
             $table->time('queue_time');
             $table->enum('status', ['waiting', 'processing', 'finished'])->default('waiting');
